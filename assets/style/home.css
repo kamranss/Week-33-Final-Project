@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footerr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Eng-DropDown, .Usd-DropDown {
+  opacity: 0;
+}
+
+.Eng {
+  transition: 2s;
+}
+
+.Usd {
+  transition: 2s;
+}
+
+.Eng:hover .Eng-DropDown {
+  opacity: 1;
+}
+
+.Usd:hover.Usd-DropDown {
+  opacity: 1;
+}
+
+.categories {
+  margin-top: 20px;
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+}
+
+.categories-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: 250px;
+}
+
+.first {
+  height: 100%;
+  width: 50%;
+  border: 1px solid rgb(237, 235, 235);
+}
+.first .category-first {
+  display: flex;
+  justify-content: space-around;
+}
+
+.category {
+  height: 50%;
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  border: 0.2px solid grey;
+  margin-left: 0.3px;
+  margin-top: 0.3px;
+}
+
+.category-image {
+  margin-top: 20%;
+  height: 60%;
+  width: 30%;
+}
+.category-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.category-detail {
+  margin-top: 20%;
+  height: 100%;
+  width: 60%;
+}
+.category-detail .entry-category {
+  height: 30%;
+  width: 100%;
+  font-size: 15px;
+}
+.category-detail .category-count {
+  height: 30%;
+  width: 100%;
+  font-size: 15px;
+}/*# sourceMappingURL=home.css.map */
