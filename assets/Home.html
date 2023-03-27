@@ -10,103 +10,179 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./assets/style/home.css">
     <title>Document</title>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class=" d-flex justify-content-between container-fluid">
-            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">My account</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Wishlist</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active">Order Tracking</a>
-                    </li>
-                </ul>
-                <div class=" collapse navbar-collapse d-flex justify-content-between">
-                    <p><i class="fa-solid fa-shield-halved"></i>100% Secure delivery without contacting the courier</p>
-                    <p>Need help? Call Us: <span><a href=" ">+ 0020 500</a></span> </p>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown Eng">
-                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                ENG
-                            </a>
-                            <ul class="dropdown-menu Eng-DropDown" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">English</a></li>
-                                <li><a class="dropdown-item" href="#">Spanish</a></li>
-                                <li><a class="dropdown-item" href="#">German</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown Usd">
-                            <!-- <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                USD
-                            </a> -->
-                            
-                            <a class="nav-link dropdown-toggle active" href="">Usd</a>
-                            <ul class="dropdown-menu Usd-DropDown" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">USD</a></li>
-                                <li><a class="dropdown-item" href="#">INR</a></li>
-                                <li><a class="dropdown-item" href="#">GBP</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+    <header class="header">
+        <nav>
+            <div class=" nav-container container col-11_5">
+                <div class=" nav-box row col-12">
+                    <div class="nav-leftSide col-4">
+                        <ul class="nav-leftSide-ul col-12">
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">My account</a></li>
+                            <li><a href="">Whishlist</a></li>
+                            <li><a href="">Order Trucking</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-middleSide col-6">
+                        <p class="col-8"><i class="fa-solid fa-shield-halved"></i>100% Secure delivery without
+                            contacting the courier</p>
+                        <p class="need-help col-4">Need help? Call Us: <span><a href=" ">+ 0020 500</a></span> </p>
+                    </div>
+                    <div class="nav-rightSide col-lg-2">
+                        <ul class=" ">
+                            <li class="">
+                                <a class="" href="">Eng<i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="">
+                                    <li><a class="" href="#">English</a></li>
+                                    <li><a class="" href="#">Spanish</a></li>
+                                    <li><a class="" href="#">German</a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a class="" href="">Usd<i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="">
+                                    <li><a class="" href="#">USD</a></li>
+                                    <li><a class="" href="#">INR</a></li>
+                                    <li><a class="" href="#">GBP</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-    
+        </nav>
+        <hr>
+        <div class="container nav-second-part col-12">
+            <div class="nav-second-part-row row col-12">
+                <div class="nav-second-part-left-side col-3">
+                    <div class="header-buttons hide-desktop col-12">
+                        <a href="#">
+                            <i class="klbth-icon-menu-thin"></i>
+                        </a>
+                    </div><!-- header-buttons -->
+                    <div class="logo col-12">
+                        <a href="https://klbtheme.com/bacola/" title="Bacola – Grocery Market and Food Theme">
+                            <img class="desktop-logo hide-mobile"
+                                src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/bacola-logo.png"
+                                alt="Bacola – Grocery Market and Food Theme">
+
+                            <img class="mobile-logo hide-desktop"
+                                src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/bacola-logo-mobile.png"
+                                alt="Bacola – Grocery Market and Food Theme">
+                            <span class="brand-description">Online Grocery Shopping Center</span>
+                        </a>
+                    </div><!-- site-brand -->
+                </div>
+            </div>
         </div>
-    </nav>
+    </header>
+
 
     <!-- slider -->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="home-image d-block w-100" decoding="async"
-                    src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/slider-image-6.jpg"
-                    alt="bacola">
+                <img src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/slider-image-6.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <!-- slide content -->
+                    <div class="content-wrapper">
+                        <div class="content-header">
+                            <div class="content-description">Exclusive Offer</div>
+                            <div class="content-discount">-20% Off</div>
+                        </div>
+                        <div class="content-main">
+                            <h3 class="entry-title">A different kind of grocery store</h3>
+                            <div class="content-text">Only this week. Don’t miss...</div>
+                        </div>
+                        <div class="content-footer"><span class="price-text">from </span><span
+                                class="price">$7.99</span></div><a
+                            href="https://klbtheme.com/bacola/product/all-natural-italian-style-chicken-meatballs/"
+                            class="button button-secondary rounded" tabindex="0">Shop Now <i
+                                class="klbth-icon-right-arrow"></i></a>
+                    </div>
+                </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" decoding="async"
-                    src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/slider-image-7.jpg"
-                    alt="bacola">
+                <img src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/slider-image-7.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <!-- slide content -->
+                    <div class="content-wrapper">
+                        <div class="content-header">
+                            <div class="content-description">Exclusive Offer</div>
+                            <div class="content-discount">-20% Off</div>
+                        </div>
+                        <div class="content-main">
+                            <h3 class="entry-title">A different kind of grocery store</h3>
+                            <div class="content-text">Only this week. Don’t miss...</div>
+                        </div>
+                        <div class="content-footer"><span class="price-text">from </span><span
+                                class="price">$7.99</span></div><a
+                            href="https://klbtheme.com/bacola/product/all-natural-italian-style-chicken-meatballs/"
+                            class="button button-secondary rounded" tabindex="0">Shop Now <i
+                                class="klbth-icon-right-arrow"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/slider-image-6.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <!-- slide content -->
+                    <div class="content-wrapper">
+                        <div class="content-header">
+                            <div class="content-description">Exclusive Offer</div>
+                            <div class="content-discount">-20% Off</div>
+                        </div>
+                        <div class="content-main">
+                            <h3 class="entry-title">A different kind of grocery store</h3>
+                            <div class="content-text">Only this week. Don’t miss...</div>
+                        </div>
+                        <div class="content-footer"><span class="price-text">from </span><span
+                                class="price">$7.99</span></div><a
+                            href="https://klbtheme.com/bacola/product/all-natural-italian-style-chicken-meatballs/"
+                            class="button button-secondary rounded" tabindex="0">Shop Now <i
+                                class="klbth-icon-right-arrow"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
 
-    <section>
+
+
+    <section class="col-12">
         <div class="categories col-10">
-            <div class="first col-2">
+            <div class="first">
                 <div class="category-first">
-                    <div class="category-image"><a
-                            href="https://klbtheme.com/bacola/product-category/beverages/"><img
+                    <div class="category-image"><a href="https://klbtheme.com/bacola/product-category/beverages/"><img
                                 decoding="async"
                                 src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/baverages-1.jpg"
                                 alt="Beverages"></a></div>
@@ -121,8 +197,7 @@
             <div class="categories-wrapper col-10">
                 <div class="category">
                     <div class="category-image"><a
-                            href="https://klbtheme.com/bacola/product-category/biscuits-snacks/"><img
-                                decoding="async"
+                            href="https://klbtheme.com/bacola/product-category/biscuits-snacks/"><img decoding="async"
                                 src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/biscuitssnacks-1.jpg"
                                 alt="Biscuits &amp; Snacks"></a></div>
                     <div class="category-detail">
@@ -134,8 +209,7 @@
                 </div>
                 <div class="category">
                     <div class="category-image"><a
-                            href="https://klbtheme.com/bacola/product-category/breads-bakery/"><img
-                                decoding="async"
+                            href="https://klbtheme.com/bacola/product-category/breads-bakery/"><img decoding="async"
                                 src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/breadbakery-1.jpg"
                                 alt="Breads &amp; Bakery"></a></div>
                     <div class="category-detail">
@@ -147,8 +221,7 @@
                 </div>
                 <div class="category">
                     <div class="category-image"><a
-                            href="https://klbtheme.com/bacola/product-category/breakfast-dairy/"><img
-                                decoding="async"
+                            href="https://klbtheme.com/bacola/product-category/breakfast-dairy/"><img decoding="async"
                                 src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/dairy-1.jpg"
                                 alt="Breakfast &amp; Dairy"></a></div>
                     <div class="category-detail">
@@ -160,8 +233,7 @@
                 </div>
                 <div class="category">
                     <div class="category-image"><a
-                            href="https://klbtheme.com/bacola/product-category/frozen-foods/"><img
-                                decoding="async"
+                            href="https://klbtheme.com/bacola/product-category/frozen-foods/"><img decoding="async"
                                 src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/category-image4.png"
                                 alt="Frozen Foods"></a></div>
                     <div class="category-detail">
@@ -173,8 +245,7 @@
                 </div>
                 <div class="category">
                     <div class="category-image"><a
-                            href="https://klbtheme.com/bacola/product-category/fruits-vegetables/"><img
-                                decoding="async"
+                            href="https://klbtheme.com/bacola/product-category/fruits-vegetables/"><img decoding="async"
                                 src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/fruitvegetables-1.jpg"
                                 alt="Fruits &amp; Vegetables"></a></div>
                     <div class="category-detail">
@@ -186,8 +257,7 @@
                 </div>
                 <div class="category">
                     <div class="category-image"><a
-                            href="https://klbtheme.com/bacola/product-category/grocery-staples/"><img
-                                decoding="async"
+                            href="https://klbtheme.com/bacola/product-category/grocery-staples/"><img decoding="async"
                                 src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/category-image2.png"
                                 alt="Grocery &amp; Staples"></a></div>
                     <div class="category-detail">
@@ -199,8 +269,7 @@
                 </div>
                 <div class="category">
                     <div class="category-image"><a
-                            href="https://klbtheme.com/bacola/product-category/household-needs/"><img
-                                decoding="async"
+                            href="https://klbtheme.com/bacola/product-category/household-needs/"><img decoding="async"
                                 src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/household-1.jpg"
                                 alt="Household Needs"></a></div>
                     <div class="category-detail">
@@ -212,8 +281,7 @@
                 </div>
                 <div class="category">
                     <div class="category-image"><a
-                            href="https://klbtheme.com/bacola/product-category/meats-seafood/"><img
-                                decoding="async"
+                            href="https://klbtheme.com/bacola/product-category/meats-seafood/"><img decoding="async"
                                 src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/meat-1.jpg"
                                 alt="Meats &amp; Seafood"></a></div>
                     <div class="category-detail">
@@ -227,8 +295,6 @@
         </div>
     </section>
 
-
-    
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
