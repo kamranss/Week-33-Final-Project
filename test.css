@@ -1,0 +1,14 @@
+#categories .category-count{
+    font-size: clamp(0.8em, 1vw, 2em )
+}
+#categories .category-detail a{
+    font-size: clamp(0.5em, 1vw, 1.5em )
+}
+
+@media only screen and (max-width: 992px){
+    .category{
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+    }
+}

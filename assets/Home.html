@@ -17,10 +17,11 @@
 <body>
 
     <header class="header">
-        <nav>
-            <div class=" nav-container container col-11_5">
-                <div class=" nav-box row col-12">
-                    <div class="nav-leftSide col-4">
+        <nav class="nav-main">
+            <div class=" nav-container container">
+                <div class=" nav-box row">
+                    <!-- left side -->
+                    <div class="nav-leftSide col-auto">
                         <ul class="nav-leftSide-ul col-12">
                             <li><a href="">About Us</a></li>
                             <li><a href="">My account</a></li>
@@ -28,10 +29,11 @@
                             <li><a href="">Order Trucking</a></li>
                         </ul>
                     </div>
-                    <div class="nav-middleSide col-6">
-                        <p class="col-8"><i class="fa-solid fa-shield-halved"></i>100% Secure delivery without
+                    <!-- middle side -->
+                    <div class="nav-middleSide col-auto">
+                        <p class=""><i class="fa-solid fa-shield-halved"></i>100% Secure delivery without
                             contacting the courier</p>
-                        <p class="need-help col-4">Need help? Call Us: <span><a href=" ">+ 0020 500</a></span> </p>
+                        <p class="need-help">Need help? Call Us: <span><a href="tel:0020500">+ 0020 500</a></span> </p>
                     </div>
                     <div class="nav-rightSide col-lg-2">
                         <ul class=" ">
@@ -78,8 +80,29 @@
                         </a>
                     </div><!-- site-brand -->
                 </div>
+                <div class="column column-center nav-second-part-middle-side">
+                    <div class="header-location site-location hide-mobile">
+                        <a href="#">
+                            <span class="location-description">Your Location</span>
+                            <div class="current-location">Select a Location</div>
+                        </a>
+                    </div>
+
+                    <div class="header-search">
+                        <form action="https://klbtheme.com/bacola/" class="search-form" role="search" method="get"
+                            id="searchform">
+                            <input type="search" value="" name="s" placeholder="Search for products..."
+                                autocomplete="off">
+                            <button type="submit"><i class="klbth-icon-search"></i></button>
+                            <input type="hidden" name="post_type" value="product">
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- Vertically centered scrollable modal -->
+
     </header>
     <br>
     <br>
@@ -162,8 +185,7 @@
                             <span class="price-text">from </span>
                             <span class="price">$7.99</span>
                         </div>
-                        <a
-                            href="https://klbtheme.com/bacola/product/all-natural-italian-style-chicken-meatballs/"
+                        <a href="https://klbtheme.com/bacola/product/all-natural-italian-style-chicken-meatballs/"
                             class="button button-secondary rounded col-4" tabindex="0">Shop Now <i
                                 class="klbth-icon-right-arrow"></i>
                         </a>
@@ -185,122 +207,131 @@
 
 
 
-    <section class="col-12">
-        <div class="categories col-10">
-            <div class="first">
-                <div class="category-first">
-                    <div class="category-image"><a href="https://klbtheme.com/bacola/product-category/beverages/"><img
-                                decoding="async"
-                                src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/baverages-1.jpg"
-                                alt="Beverages"></a></div>
-                    <div class="category-detail">
-                        <h3 class="entry-category"><a
-                                href="https://klbtheme.com/bacola/product-category/beverages/">Beverages</a>
-                        </h3>
-                        <div class="category-count">11 Items</div>
+ 
+
+    <section>
+        <div id="categories" class="container">
+            <div class="row">
+                <div class="first col-lg-3  col-sm-12">
+                    <div class="category-first d-flex flex-column justify-content-between align-item-center text-center">
+                        <div class="category-image"><a href="https://klbtheme.com/bacola/product-category/beverages/"><img style="width: 60%;" class="h-auto"
+                                    decoding="async"
+                                    src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/baverages-1.jpg"
+                                    alt="Beverages"></a></div>
+                        <div class="category-detail">
+                            <h3 class="entry-category"><a
+                                    href="https://klbtheme.com/bacola/product-category/beverages/">Beverages</a>
+                            </h3>
+                            <div class="category-count">11 Items</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="categories-wrapper col-10">
-                <div class="category">
-                    <div class="category-image"><a
-                            href="https://klbtheme.com/bacola/product-category/biscuits-snacks/"><img decoding="async"
-                                src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/biscuitssnacks-1.jpg"
-                                alt="Biscuits &amp; Snacks"></a></div>
-                    <div class="category-detail">
-                        <h3 class="entry-category"><a
-                                href="https://klbtheme.com/bacola/product-category/biscuits-snacks/">Biscuits
-                                &amp; Snacks</a></h3>
-                        <div class="category-count">6 Items</div>
-                    </div>
-                </div>
-                <div class="category">
-                    <div class="category-image"><a
-                            href="https://klbtheme.com/bacola/product-category/breads-bakery/"><img decoding="async"
-                                src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/breadbakery-1.jpg"
-                                alt="Breads &amp; Bakery"></a></div>
-                    <div class="category-detail">
-                        <h3 class="entry-category"><a
-                                href="https://klbtheme.com/bacola/product-category/breads-bakery/">Breads
-                                &amp; Bakery</a></h3>
-                        <div class="category-count">6 Items</div>
-                    </div>
-                </div>
-                <div class="category">
-                    <div class="category-image"><a
-                            href="https://klbtheme.com/bacola/product-category/breakfast-dairy/"><img decoding="async"
-                                src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/dairy-1.jpg"
-                                alt="Breakfast &amp; Dairy"></a></div>
-                    <div class="category-detail">
-                        <h3 class="entry-category"><a
-                                href="https://klbtheme.com/bacola/product-category/breakfast-dairy/">Breakfast
-                                &amp; Dairy</a></h3>
-                        <div class="category-count">8 Items</div>
-                    </div>
-                </div>
-                <div class="category">
-                    <div class="category-image"><a
-                            href="https://klbtheme.com/bacola/product-category/frozen-foods/"><img decoding="async"
-                                src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/category-image4.png"
-                                alt="Frozen Foods"></a></div>
-                    <div class="category-detail">
-                        <h3 class="entry-category"><a
-                                href="https://klbtheme.com/bacola/product-category/frozen-foods/">Frozen
-                                Foods</a></h3>
-                        <div class="category-count">7 Items</div>
-                    </div>
-                </div>
-                <div class="category">
-                    <div class="category-image"><a
-                            href="https://klbtheme.com/bacola/product-category/fruits-vegetables/"><img decoding="async"
-                                src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/fruitvegetables-1.jpg"
-                                alt="Fruits &amp; Vegetables"></a></div>
-                    <div class="category-detail">
-                        <h3 class="entry-category"><a
-                                href="https://klbtheme.com/bacola/product-category/fruits-vegetables/">Fruits
-                                &amp; Vegetables</a></h3>
-                        <div class="category-count">12 Items</div>
-                    </div>
-                </div>
-                <div class="category">
-                    <div class="category-image"><a
-                            href="https://klbtheme.com/bacola/product-category/grocery-staples/"><img decoding="async"
-                                src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/category-image2.png"
-                                alt="Grocery &amp; Staples"></a></div>
-                    <div class="category-detail">
-                        <h3 class="entry-category"><a
-                                href="https://klbtheme.com/bacola/product-category/grocery-staples/">Grocery
-                                &amp; Staples</a></h3>
-                        <div class="category-count">7 Items</div>
-                    </div>
-                </div>
-                <div class="category">
-                    <div class="category-image"><a
-                            href="https://klbtheme.com/bacola/product-category/household-needs/"><img decoding="async"
-                                src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/household-1.jpg"
-                                alt="Household Needs"></a></div>
-                    <div class="category-detail">
-                        <h3 class="entry-category"><a
-                                href="https://klbtheme.com/bacola/product-category/household-needs/">Household
-                                Needs</a></h3>
-                        <div class="category-count">1 Items</div>
-                    </div>
-                </div>
-                <div class="category">
-                    <div class="category-image"><a
-                            href="https://klbtheme.com/bacola/product-category/meats-seafood/"><img decoding="async"
-                                src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/meat-1.jpg"
-                                alt="Meats &amp; Seafood"></a></div>
-                    <div class="category-detail">
-                        <h3 class="entry-category"><a
-                                href="https://klbtheme.com/bacola/product-category/meats-seafood/">Meats
-                                &amp; Seafood</a></h3>
-                        <div class="category-count">5 Items</div>
+                <div class="categories-wrapper col-lg-9">
+                    <div class="row">
+                        <div class="category col-lg-3 col-md-6 category-first d-flex justify-content-between align-item-center">
+                            <div class="category-image col-lg-6"><a
+                                    href="https://klbtheme.com/bacola/product-category/biscuits-snacks/"><img style="width: 100%;" class="h-auto" decoding="async"
+                                        src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/biscuitssnacks-1.jpg"
+                                        alt="Biscuits &amp; Snacks"></a></div>
+                            <div class="category-detail col-lg-6">
+                                <h3 class="entry-category"><a
+                                        href="https://klbtheme.com/bacola/product-category/biscuits-snacks/">Biscuits
+                                        &amp; Snacks</a></h3>
+                                <div class="category-count">6 Items</div>
+                            </div>
+                        </div>
+                        <div class="category col-lg-3 col-md-6 category-first d-flex justify-content-between align-item-center">
+                            <div class="category-image col-lg-6"><a
+                                    href="https://klbtheme.com/bacola/product-category/breads-bakery/"><img  style="width: 100%;" class="h-auto" decoding="async"
+                                        src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/breadbakery-1.jpg"
+                                        alt="Breads &amp; Bakery"></a></div>
+                            <div class="category-detail col-lg-6">
+                                <h3 class="entry-category"><a
+                                        href="https://klbtheme.com/bacola/product-category/breads-bakery/">Breads
+                                        &amp; Bakery</a></h3>
+                                <div class="category-count">6 Items</div>
+                            </div>
+                        </div>
+                        <div class="category col-lg-3 col-md-6 category-first d-flex justify-content-between align-item-center">
+                            <div class="category-image col-lg-6"><a
+                                    href="https://klbtheme.com/bacola/product-category/breakfast-dairy/"><img style="width: 100%;" class="h-auto" decoding="async"
+                                        src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/dairy-1.jpg"
+                                        alt="Breakfast &amp; Dairy"></a></div>
+                            <div class="category-detail col-lg-6">
+                                <h3 class="entry-category"><a
+                                        href="https://klbtheme.com/bacola/product-category/breakfast-dairy/">Breakfast
+                                        &amp; Dairy</a></h3>
+                                <div class="category-count">8 Items</div>
+                            </div>
+                        </div>
+                        <div class="category col-lg-3 col-md-6 category-first d-flex justify-content-between align-item-center">
+                            <div class="category-image col-lg-6"><a
+                                    href="https://klbtheme.com/bacola/product-category/frozen-foods/"><img style="width: 100%;" class="h-auto" decoding="async"
+                                        src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/category-image4.png"
+                                        alt="Frozen Foods"></a></div>
+                            <div class="category-detail col-lg-6">
+                                <h3 class="entry-category"><a
+                                        href="https://klbtheme.com/bacola/product-category/frozen-foods/">Frozen
+                                        Foods</a></h3>
+                                <div class="category-count">7 Items</div>
+                            </div>
+                        </div>
+                       
+                        <div class="category col-lg-3 col-md-6 category-first d-flex justify-content-between align-item-center">
+                            <div class="category-image col-lg-6"><a
+                                    href="https://klbtheme.com/bacola/product-category/fruits-vegetables/"><img style="width: 100%;" class="h-auto" decoding="async"
+                                        src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/fruitvegetables-1.jpg"
+                                        alt="Fruits &amp; Vegetables"></a></div>
+                            <div class="category-detail col-lg-6">
+                                <h3 class="entry-category"><a
+                                        href="https://klbtheme.com/bacola/product-category/fruits-vegetables/">Fruits
+                                        &amp; Vegetables</a></h3>
+                                <div class="category-count">12 Items</div>
+                            </div>
+                        </div>
+                        <div class="category col-lg-3 col-md-6 category-first d-flex justify-content-between align-item-center">
+                            <div class="category-image col-lg-6"><a
+                                    href="https://klbtheme.com/bacola/product-category/grocery-staples/"><img style="width: 100%;" class="h-auto" decoding="async"
+                                        src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/category-image2.png"
+                                        alt="Grocery &amp; Staples"></a></div>
+                            <div class="category-detail col-lg-6">
+                                <h3 class="entry-category"><a
+                                        href="https://klbtheme.com/bacola/product-category/grocery-staples/">Grocery
+                                        &amp; Staples</a></h3>
+                                <div class="category-count">7 Items</div>
+                            </div>
+                        </div>
+                        <div class="category col-lg-3 col-md-6 category-first d-flex justify-content-between align-item-center">
+                            <div class="category-image col-lg-6"><a
+                                    href="https://klbtheme.com/bacola/product-category/household-needs/"><img style="width: 100%;" class="h-auto" decoding="async"
+                                        src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/household-1.jpg"
+                                        alt="Household Needs"></a></div>
+                            <div class="category-detail col-lg-6">
+                                <h3 class="entry-category"><a
+                                        href="https://klbtheme.com/bacola/product-category/household-needs/">Household
+                                        Needs</a></h3>
+                                <div class="category-count">1 Items</div>
+                            </div>
+                        </div>
+                        <div class="category col-lg-3 col-md-6 category-first d-flex justify-content-between align-item-center">
+                            <div class="category-image col-lg-6"><a
+                                    href="https://klbtheme.com/bacola/product-category/meats-seafood/"><img style="width: 100%;" class="h-auto" decoding="async"
+                                        src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/meat-1.jpg"
+                                        alt="Meats &amp; Seafood"></a></div>
+                            <div class="category-detail col-lg-6">
+                                <h3 class="entry-category"><a
+                                        href="https://klbtheme.com/bacola/product-category/meats-seafood/">Meats
+                                        &amp; Seafood</a></h3>
+                                <div class="category-count">5 Items</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
