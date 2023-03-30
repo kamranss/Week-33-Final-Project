@@ -7,6 +7,7 @@
 body {
   width: 100%;
   font-family: myFirstFont;
+  padding: 0 3rem;
 }
 
 .header {
@@ -100,19 +101,13 @@ body {
 .header .hr {
   opacity: 0.3;
   height: 0.5px;
+  margin: 0 -3rem;
 }
 .header .nav-second-part .nav-second-part-row .nav-second-part-left-side {
-  width: 100%;
   height: 50px;
   margin-top: 10px;
 }
-.header .nav-second-part .nav-second-part-row .nav-second-part-left-side .logo {
-  width: 70%;
-  height: 90%;
-}
 .header .nav-second-part .nav-second-part-row .nav-second-part-left-side .logo a {
-  height: 100%;
-  width: 100%;
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
@@ -131,37 +126,40 @@ body {
     display: none;
   }
 }
-.content-slider {
+.slider {
+  margin: 0 -3rem;
+}
+.slider .content-slider {
   position: absolute;
   bottom: 215px;
   left: -183px;
 }
-.content-slider .content-header {
+.slider .content-slider .content-header {
   display: flex;
   justify-content: center;
   color: black;
 }
-.content-slider .content-main {
+.slider .content-slider .content-main {
   color: black;
 }
-.content-slider .content-main h3 {
+.slider .content-slider .content-main h3 {
   font-weight: 800;
   font-size: 50px;
 }
-.content-slider .content-footer {
+.slider .content-slider .content-footer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.content-slider .content-footer .price-text {
+.slider .content-slider .content-footer .price-text {
   color: black;
 }
-.content-slider .content-footer .price {
+.slider .content-slider .content-footer .price {
   font-size: 30px;
   font-weight: 600;
   color: red;
 }
-.content-slider .button-secondary {
+.slider .content-slider .button-secondary {
   height: 30px;
   text-decoration: none;
   background-color: rgb(33, 106, 223);
@@ -183,7 +181,15 @@ body {
     align-items: center;
     text-align: center;
   }
+  .category-border {
+    border: none !important;
+    outline: none !important;
+  }
+  #categories {
+    border: 1px solid rgb(177, 169, 169);
+  }
 }
-.hide-desktop {
-  display: none;
+.category-border {
+  border: 1px solid rgb(177, 169, 169);
+  outline: 1px solid white;
 }/*# sourceMappingURL=home.css.map */
