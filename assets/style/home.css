@@ -131,8 +131,8 @@ body {
 }
 .slider .content-slider {
   position: absolute;
-  bottom: 215px;
-  left: -183px;
+  bottom: 257%;
+  left: -10%;
 }
 .slider .content-slider .content-header {
   display: flex;
@@ -192,4 +192,11 @@ body {
 .category-border {
   border: 1px solid rgb(177, 169, 169);
   outline: 1px solid white;
+}
+
+.countdown .count-item {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  font-size: clamp(0.8em, 1vw, 2em);
 }/*# sourceMappingURL=home.css.map */

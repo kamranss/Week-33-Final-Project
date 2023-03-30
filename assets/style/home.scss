@@ -252,3 +252,12 @@ body{
 }
 
 
+
+.countdown{
+    .count-item{
+        background-color: red;
+        color: white;
+        border-radius: 5px;
+        font-size: clamp(0.8em, 1vw, 2em )
+    }
+}
