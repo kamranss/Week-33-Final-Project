@@ -210,4 +210,27 @@ body {
   color: white;
   border-radius: 5px;
   font-size: clamp(0.8em, 1vw, 2em);
+}
+
+.svg {
+  transition: 0.8;
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 200%;
+  display: none;
+}
+
+.svg:hover {
+  background-color: rgb(12, 82, 120);
+  border-radius: 5px;
+  transform: scale(1);
+}
+
+.path:hover {
+  color: white;
+}
+
+.category2-right-side {
+  margin-left: 3rem;
 }/*# sourceMappingURL=home.css.map */

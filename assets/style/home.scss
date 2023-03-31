@@ -286,10 +286,23 @@ body{
 
 
 .svg{
-
+transition: 0.8;
+position: absolute;
+width: 1.5rem;
+height: 1.5rem;
+top: 200%;
+display: none;
 }
 
-// .product2-right-side{
-//     display: flex;
-//     flex-wrap: wrap;
-// }
+.svg:hover{
+    background-color: rgb(12, 82, 120);
+    border-radius: 5px;
+    transform: scale(1);
+}
+.path:hover{
+    color: white;
+}
+
+.category2-right-side{
+    margin-left: 3rem;
+}
