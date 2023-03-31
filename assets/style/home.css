@@ -233,4 +233,17 @@ body {
 
 .category2-right-side {
   margin-left: 3rem;
+}
+
+.product-badges {
+  position: absolute;
+  margin: 0.5rem 0rem;
+  margin-left: 1rem;
+  z-index: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.product-badges .badge {
+  background-color: rgb(22, 123, 206);
+  margin-bottom: 0.2rem;
 }/*# sourceMappingURL=home.css.map */
