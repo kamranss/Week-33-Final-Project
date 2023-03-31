@@ -292,30 +292,70 @@ body{
 
 
 .screen-size-max{
-    background-color: rgb(181, 116, 116);
-    border-radius: 50%;
-    .svg{
-        transition: 0.8;
+        background-color: #fff;
+        border: 0.5px solid rgb(216, 212, 212);
+        border-radius: 50%;
         position: absolute;
-        width: 1.3rem;
-        height: 1.3rem;
         top: 5%;
         right: 5%;
-        fill: white;
-        // display: none;
-        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    .svg{
+        transition: 0.8;
+        width: 1rem;
+        height: 1rem;
+        fill: black;
+    }
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 
-.svg:hover{
+.heart-button{
+    background-color: #fff;
+    border: 0.5px solid rgb(216, 212, 212);
+    border-radius: 50%;
+    position: absolute;
+    top: 18%;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+        .heart-button a i{
+            transition: 0.8;
+            font-size: 1rem;
+          }
+      }
+
+  }
+  
+  .heart-button:hover{
     background-color: rgb(12, 82, 120);
-    border-radius: 5px;
-    transform: scale(1);
+  }
+
+
+  .heart-button:hover .fa-solid{
     color: white;
-}
-.path:hover{
-    color: white;
-}
+  }
+
+
+  .screen-size-max:hover {
+    background-color: rgb(12, 82, 120);
+  }
+  
+  .screen-size-max:hover svg {
+    fill: white;
+  }
 
 .category2-right-side{
     
