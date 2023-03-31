@@ -162,6 +162,8 @@ body{
     .nav-main{
         display: none;
     }
+    .category2-right-side{
+    }
 }
 
 .slider{
@@ -250,6 +252,8 @@ body{
     #categories{
         border: 1px solid rgb(177, 169, 169);
     }
+    .category2-right-side{
+    }
 }
 
 
@@ -306,8 +310,13 @@ display: none;
 }
 
 .category2-right-side{
-    margin-left: 3rem;
+
 }
+
+
+
+
+
 
 .product-badges{
     position: absolute;
@@ -321,6 +330,91 @@ display: none;
         margin-bottom: 0.2rem;
     }
 }
+
+
+
+.content-wrapper{
+    .product-title{
+        font-size: 15px;
+        a{
+            text-decoration: none;
+            color: rgb(84, 79, 79);
+            font-weight: 600;
+        }
+    }
+    .product-meta{
+        .product-available{
+            color: rgb(19, 207, 85);
+            text-transform: uppercase;
+            font-size: 0.6rem;
+            font-weight: 700;
+        }
+    }
+    .product-rating{
+        display: flex;
+        flex-direction: start;
+        .star-rating{
+            
+            .fa-solid{
+                color: rgb(244, 220, 5);
+                font-size: 0.8rem;
+            }
+            .fa-regular{
+                color: rgb(189, 172, 172);
+                font-size: 0.8rem;
+            }
+        }
+        .count-rating{
+        }
+    }
+    .price{
+        del{
+            color: gray;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        .ins-different{
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        ins{
+            color: rgb(220, 14, 14);
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+    }
+    .category2-fade-block{
+        .category2-button-group{
+            .category2-button{
+                border-radius: 30px;
+                background-color: rgb(4, 60, 144);
+                color: white;
+                height: 2.5rem;
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // .products .content-wrapper .product-title a:hover {
 //     color: var(--color-primary);

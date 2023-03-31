@@ -2,7 +2,7 @@
 
 
 // Set the starting time
-var startTime = "38 : 13 : 36 : 00".split(" : ");
+var startTime = "38 : 13 : 18 : 00".split(" : ");
 var days = parseInt(startTime[0]);
 var hours = parseInt(startTime[1]);
 var minutes = parseInt(startTime[2]);

@@ -231,10 +231,6 @@ body {
   color: white;
 }
 
-.category2-right-side {
-  margin-left: 3rem;
-}
-
 .product-badges {
   position: absolute;
   margin: 0.5rem 0rem;
@@ -246,4 +242,53 @@ body {
 .product-badges .badge {
   background-color: rgb(22, 123, 206);
   margin-bottom: 0.2rem;
+}
+
+.content-wrapper .product-title {
+  font-size: 15px;
+}
+.content-wrapper .product-title a {
+  text-decoration: none;
+  color: rgb(84, 79, 79);
+  font-weight: 600;
+}
+.content-wrapper .product-meta .product-available {
+  color: rgb(19, 207, 85);
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+.content-wrapper .product-rating {
+  display: flex;
+  flex-direction: start;
+}
+.content-wrapper .product-rating .star-rating .fa-solid {
+  color: rgb(244, 220, 5);
+  font-size: 0.8rem;
+}
+.content-wrapper .product-rating .star-rating .fa-regular {
+  color: rgb(189, 172, 172);
+  font-size: 0.8rem;
+}
+.content-wrapper .price del {
+  color: gray;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.content-wrapper .price .ins-different {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.content-wrapper .price ins {
+  color: rgb(220, 14, 14);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.content-wrapper .category2-fade-block .category2-button-group .category2-button {
+  border-radius: 30px;
+  background-color: rgb(4, 60, 144);
+  color: white;
+  height: 2.5rem;
+  display: none;
 }/*# sourceMappingURL=home.css.map */
