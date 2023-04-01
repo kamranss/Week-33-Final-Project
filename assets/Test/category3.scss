@@ -3,7 +3,7 @@
     .banner-content{
         position: absolute;
         top: 23%;
-        left: 2%;
+        left: 7%;
         .discount-text{
             color: orangered;
             font-weight: 600;
@@ -12,24 +12,73 @@
             margin-top: 1rem;
             .entry-title{
                 opacity: 0.9;
-                font-size: 25px;
+                // font-size: 2rem;
+                // font-size: clamp(1.6em, 2vw, 0.5em );
+                // font-size: 130%;
             }
             .entry-text{
                 font-size: 14px;
             }
         }
         .button-primary2{
-            margin-top: 1rem;
-            background-color: rgb(52, 56, 67);
+            margin-top: 1em;
+            background-color: rgb(15, 68, 212);
             text-decoration: none;
             border-radius: 30px;
-            padding: 1rem 3rem;
-            height: 50px;
+            height: 10%;
             color: white;
-            .a{
+            a{
                 text-decoration: none;
+                color: white;
+                width: 100%;
             }
         }
     }
+    .banner-thumbnail{
+        border-radius: 10px;
+        img{
+            border-radius: 10px;
+        }
+    }
 
+}
+
+@media only screen and (max-width: 760px){
+    .category3{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .entry-title{   
+        font-size: 10px;
+      }
+      .entry-text{
+          font-size: 5px;
+      }
+      .banner-content{
+          top: -23%;
+          left: -3%;
+      }
+      .button-primary2{
+        margin-top: 0.1em !important;
+        height: 5%;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .entry-title{   
+      font-size: 10px;
+    }
+    .entry-text{
+        font-size: 5px;
+    }
+    .banner-content{
+        top: 10% !important;
+    }
+    .button-primary2{
+        
+        height: 5%;
+    }
+    .content-main{
+        margin-top: -2px !important;
+    }
 }
