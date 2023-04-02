@@ -12,8 +12,8 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.col-lg-3_7{
-    width: calc(100%*3.9/12);
+.col-lg-3_3{
+    width: calc(100%*2.3/12);
 }
 
 
@@ -690,6 +690,19 @@ body{
 }
 
 
+// after category4 line
+
+.line{
+    background-color: #eddaaa;
+    border-radius: 10px;
+    height: 4.5rem;
+    
+    h4{
+        font-size: 1.3rem;  
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+}
 
 
 
