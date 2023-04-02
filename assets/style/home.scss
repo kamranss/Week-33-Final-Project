@@ -9,6 +9,7 @@ body{
     width: 100%;
     font-family: myFirstFont;
     padding: 0 3rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -224,7 +225,7 @@ body{
 
 
 
-
+// category1
 #categories .category-count{
     font-size: clamp(0.8em, 1vw, 2em )
 }
@@ -234,7 +235,7 @@ body{
 
 
 .category-border{
-    border: 1px solid rgb(177, 169, 169);
+    border: 0.5px solid rgb(224, 216, 216);
     outline: 1px solid white;
    }
 
@@ -256,6 +257,7 @@ body{
     }
 }
 
+// category1
 
 
 
@@ -266,97 +268,359 @@ body{
 
 
 
-
+// category2 left side
 .category2-left-side{
     border: 3px solid rgb(230, 67, 67);
     border-radius: 5px;
-}
-.deals-header{
-    padding: 1rem 1rem;
-    .entry-title{
-        color: rgb(24, 75, 178);
-    }
-    .deals-counter{
-        .countdown{
-            .count-item{
-                background-color: red;
-                color: white;
-                border-radius: 5px;
-                font-size: clamp(2em, 1vw, 1em );
+    .deals-header{
+        padding: 1rem 1rem;
+        .entry-title{
+            color: rgb(24, 75, 178);
+        }
+        .deals-counter{
+            .countdown{
+                .count-item{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #ed174a;
+                    color: white;
+                    border-radius: 5px;
+                    font-size: clamp(2em, 1vw, 1em );
+                    font-weight: 700;
+                }
+                span{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 1.5%;
+                    margin-right: 1.5%;
+                    color: rgb(30, 13, 13);
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                }
+            }
+            .deals-counter-text{
+                color: rgb(183, 174, 174);
                 opacity: 0.8;
+                font-weight: 600;
+                font-size: 0.8rem;
+            }
+        }
+        
+    }
+    .product-wrapper{
+        .thumbnail-wrapper{
+            position: relative;
+            .deal-discount{
+                position: absolute;
+                left: 4%;
+                top: 10%;
+                padding: 0.7rem 0.7rem;
+                border-radius: 50%;
+                background-color: #ed174a;
+                color: white;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            a{
+                img{
+                    width: 50%;
+                }
+            }
+        }
+        .content-wrapper{
+            .counter-product-header{
+                .price{
+                    del{
+                        color: gray;
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+                    ins{
+                        color: rgb(220, 14, 14);
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        text-decoration: none;
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+                }
+            }
+            .product-title{
+                font-size: 1.2rem;
+                font-weight: 700;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+            .product-meta{
+                .product-unit{
+                    font-size: 0.8rem;
+                    font-weight: 800;
+                }
+                .product-available{
+                    font-size: 0.8rem;
+                    font-weight: 800;
+                    color: rgb(46, 199, 35);
+                }
+            }
+            .product-rating{
+                .star-rating{
+                    .fa-solid{
+                        color: rgb(244, 220, 5);
+                        font-size: 0.6rem;
+                    }
+                }
+                .count-rating{
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 0.7rem;
+                }
+            }
+            .product-count{
+                .product-pcs{
+                    color: grey;
+                    font-weight: 600;
+                    font-size: 0.7rem;
+                    span{
+                        color: blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// category2 left side
+
+
+
+
+// category2 right side
+.category2-right-side{
+    .category2-product {
+        position: relative;
+        .product-wrapper{
+            .content-wrapper{
+                .product-title{ 
+                    font-size: 15px;
+                    a{
+                        text-decoration: none;
+                        color: rgb(84, 79, 79);
+                        font-weight: 600;
+                    }
+                }
+                .product-title-2{
+                    
+                    height: 34px !important;
+                }
+                .product-meta{
+                    .product-available{
+                        color: rgb(19, 207, 85);
+                        text-transform: uppercase;
+                        font-size: 0.6rem;
+                        font-weight: 700;
+                    }
+                }
+                .product-rating{
+                    display: flex;
+                    flex-direction: start;
+                    .star-rating{
+                        
+                        .fa-solid{
+                            color: rgb(244, 220, 5);
+                            font-size: 0.6rem;
+                        }
+                        .fa-regular{
+                            color: rgb(189, 172, 172);
+                            font-size: 0.6rem;
+                        }
+                    }
+                    .count-rating{
+                        font-size: 0.7rem;
+                        font-weight: 700;
+                    }
+                }
+                .price{
+                    del{
+                        color: gray;
+                        font-size: 1rem;
+                        font-weight: 700;
+                    }
+                    .ins-different{
+                        font-size: 1rem;
+                        font-weight: 700;
+                    }
+                    ins{
+                        color: rgb(220, 14, 14);
+                        font-size: 1.1rem;
+                        font-weight: 700;
+                        text-decoration: none;
+                    }
+                }
+                .category2-fade-block{
+                        position: absolute;
+                        margin-left: -0.8rem;
+                        top: 96%; 
+                        width: 100.5%;
+                        padding: 1rem;
+                        background-color: white;
+                        border: 1px solid #eeeeee;
+                        border-top: none;  
+                        border-bottom-left-radius: 0.5rem;
+                        border-bottom-right-radius: 0.5rem;
+                        transition: all 0.5s;
+                        visibility: hidden;
+                        opacity: 0;
+                    .category2-button-group{
+                        .category2-button{
+                            border-radius: 30px;
+                            background-color: rgb(4, 60, 144);
+                            color: white;
+                            height: 2.5rem;
+                            border: 0.2px;
+                            // display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .product-wrapper{
+            .thumbnail-wrapper{
+                .product-badges{
+                    position: absolute;
+                    margin: 0.5rem 0rem;
+                    margin-left: 1rem;
+                    z-index: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    .badge{
+                        background-color: rgb(22, 123, 206);
+                        margin-bottom: 0.2rem;
+                    }
+                }
+                .product-buttons{
+                     .screen-size-max{
+                        background-color: #fff;
+                        border: 0.1px solid rgb(216, 212, 212);
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 5%;
+                        right: 5%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: all 0.8s;
+                        .svg{
+                            transition: 0.8;
+                            width: 1rem;
+                            height: 1rem;
+                            fill: rgb(78, 76, 76);
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                      // icon howev
+                    .screen-size-max:hover {
+                        background-color: rgb(12, 82, 120);
+                    }
+                      
+                    .screen-size-max:hover svg {
+                        fill: white;
+                    }
+
+
+
+                    .heart-button{
+                        background-color: #fff;
+                        border: 0.5px solid rgb(216, 212, 212);
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 18%;
+                        right: 5%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: all 0.8s;
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            text-decoration: none;
+                            color: rgb(65, 63, 63);
+                            .heart-button a i{
+                                // transition: 0.8;
+                                font-size: 1rem;
+                              }
+                          }
+                    }
+                    // icon howev
+                    .heart-button:hover{
+                        background-color: rgb(12, 82, 120);
+                    }
+                    .heart-button:hover .fa-solid{
+                        color: white;
+                    }
+                    
+                }
             }
         }
     }
 }
 
 
-
-.screen-size-max{
-        background-color: #fff;
-        border: 0.5px solid rgb(216, 212, 212);
-        border-radius: 50%;
-        position: absolute;
-        top: 5%;
-        right: 5%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    .svg{
-        transition: 0.8;
-        width: 1rem;
-        height: 1rem;
-        fill: black;
-    }
-    a{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-
-.heart-button{
-    background-color: #fff;
-    border: 0.5px solid rgb(216, 212, 212);
-    border-radius: 50%;
-    position: absolute;
-    top: 18%;
-    right: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    a{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        color: black;
-        .heart-button a i{
-            transition: 0.8;
-            font-size: 1rem;
-          }
-      }
-
+// hower
+.category2-product:hover {
+    box-shadow: 0px 0px 13px 4px rgba(165,155,155,0.75);
+    -webkit-box-shadow: 0px 0px 13px 4px rgba(165,155,155,0.75);
+    -moz-box-shadow: 0px 0px 13px 4px rgba(165,155,155,0.75);
+    background-color: inherit !important;
+    border: 0px solid grey;
+    border-radius: 5px;
+   
   }
+ 
   
-  .heart-button:hover{
-    background-color: rgb(12, 82, 120);
+  .category2-product:hover .category2-fade-block {
+    box-shadow: 0px 0px 13px 4px rgba(165,155,155,0.75);
+    -webkit-box-shadow: 0px 0px 13px 4px rgba(165,155,155,0.75);
+    -moz-box-shadow: 0px 0px 13px 4px rgba(165,155,155,0.75);
+    transform: translateY(16%) !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 100 !important;
+    background-color: white !important;
+    transition: all 0.2s;
+    border-top: none !important;
   }
 
-
-  .heart-button:hover .fa-solid{
-    color: white;
+  .category2-product:hover .screen-size-max {
+    
+    transform: translateX(-20%);
+    visibility: visible !important;
+    opacity: 1 !important;
+    // transition: all 0.5s;
   }
-
-
-  .screen-size-max:hover {
-    background-color: rgb(12, 82, 120);
+  .category2-product:hover .heart-button {
+    transform: translateX(-20%);
+    visibility: visible !important;
+    opacity: 1 !important;
+    // transition: all 0.5s;
   }
-  
-  .screen-size-max:hover svg {
-    fill: white;
-  }
+//hower
+// category2 right side
 
+ 
+
+//   animation for card category2
 .category2-right-side{
     
     .category2-product1{
@@ -382,92 +646,6 @@ body{
 
 
 
-.product-badges{
-    position: absolute;
-    margin: 0.5rem 0rem;
-    margin-left: 1rem;
-    z-index: 5px;
-    display: flex;
-    flex-direction: column;
-    .badge{
-        background-color: rgb(22, 123, 206);
-        margin-bottom: 0.2rem;
-    }
-}
-
-
-
-.category2-product{
-    position: relative;
-    .product-wrapper{
-        .content-wrapper{
-            .product-title{
-                font-size: 15px;
-                a{
-                    text-decoration: none;
-                    color: rgb(84, 79, 79);
-                    font-weight: 600;
-                }
-            }
-            .product-title-2{
-                height: 34px !important;
-            }
-            .product-meta{
-                .product-available{
-                    color: rgb(19, 207, 85);
-                    text-transform: uppercase;
-                    font-size: 0.6rem;
-                    font-weight: 700;
-                }
-            }
-            .product-rating{
-                display: flex;
-                flex-direction: start;
-                .star-rating{
-                    
-                    .fa-solid{
-                        color: rgb(244, 220, 5);
-                        font-size: 0.8rem;
-                    }
-                    .fa-regular{
-                        color: rgb(189, 172, 172);
-                        font-size: 0.8rem;
-                    }
-                }
-                .count-rating{
-                }
-            }
-            .price{
-                del{
-                    color: gray;
-                    font-size: 1rem;
-                    font-weight: 700;
-                }
-                .ins-different{
-                    font-size: 1rem;
-                    font-weight: 700;
-                }
-                ins{
-                    color: rgb(220, 14, 14);
-                    font-size: 1.1rem;
-                    font-weight: 700;
-                    text-decoration: none;
-                }
-            }
-            .category2-fade-block{
-                .category2-button-group{
-                    .category2-button{
-                        border-radius: 30px;
-                        background-color: rgb(4, 60, 144);
-                        color: white;
-                        height: 2.5rem;
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
-}
 
 
 
@@ -484,27 +662,3 @@ body{
 
 
 
-
-
-
-
-// .products .content-wrapper .product-title a:hover {
-//     color: var(--color-primary);
-// }
-// .product-title{
-//     font-size: 1rem;
-// }
-// .products .content-wrapper .product-title a {
-//     display: -ms-flexbox;
-//     display: flex;
-//     display: -webkit-box;
-//     color: var(--color-text);
-//     text-decoration: none;
-//     -webkit-line-clamp: 2;
-//     -webkit-box-orient: vertical;
-//     white-space: normal;
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//     -webkit-transition: all 0.2s cubic-bezier(.28,.12,.22,1);
-//     transition: all 0.2s cubic-bezier(.28,.12,.22,1);
-// }

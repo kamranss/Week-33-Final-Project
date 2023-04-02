@@ -1,0 +1,202 @@
+.category2-left-side{
+    border: 3px solid rgb(230, 67, 67);
+    border-radius: 5px;
+}
+.deals-header{
+    padding: 1rem 1rem;
+    .entry-title{
+        color: rgb(24, 75, 178);
+    }
+    .deals-counter{
+        .countdown{
+            .count-item{
+                background-color: red;
+                color: white;
+                border-radius: 5px;
+                font-size: clamp(2em, 1vw, 1em );
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+
+
+.screen-size-max{
+        background-color: #fff;
+        border: 0.5px solid rgb(216, 212, 212);
+        border-radius: 50%;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    .svg{
+        transition: 0.8;
+        width: 1rem;
+        height: 1rem;
+        fill: black;
+    }
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+.heart-button{
+    background-color: #fff;
+    border: 0.5px solid rgb(216, 212, 212);
+    border-radius: 50%;
+    position: absolute;
+    top: 18%;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+        .heart-button a i{
+            transition: 0.8;
+            font-size: 1rem;
+          }
+      }
+
+  }
+  
+  .heart-button:hover{
+    background-color: rgb(12, 82, 120);
+  }
+
+
+  .heart-button:hover .fa-solid{
+    color: white;
+  }
+
+
+  .screen-size-max:hover {
+    background-color: rgb(12, 82, 120);
+  }
+  
+  .screen-size-max:hover svg {
+    fill: white;
+  }
+
+.category2-right-side{
+    
+    .category2-product1{
+        transition: height 0.2s ease-in-out;
+    }
+    
+    
+    // should be fixed 
+    .category2-product1:hover{
+        z-index: 10px;
+        position: absolute;
+        width: 16rem;
+        background-color: white;
+        height: 400px;
+        border-radius: 5px;
+    
+    }
+    
+   
+}
+
+
+
+
+
+.product-badges{
+    position: absolute;
+    margin: 0.5rem 0rem;
+    margin-left: 1rem;
+    z-index: 5px;
+    display: flex;
+    flex-direction: column;
+    .badge{
+        background-color: rgb(22, 123, 206);
+        margin-bottom: 0.2rem;
+    }
+}
+
+
+
+.category2-product{
+    position: relative;
+    .product-wrapper{
+        .content-wrapper{
+            .product-title{
+                font-size: 15px;
+                a{
+                    text-decoration: none;
+                    color: rgb(84, 79, 79);
+                    font-weight: 600;
+                }
+            }
+            .product-title-2{
+                height: 34px !important;
+            }
+            .product-meta{
+                .product-available{
+                    color: rgb(19, 207, 85);
+                    text-transform: uppercase;
+                    font-size: 0.6rem;
+                    font-weight: 700;
+                }
+            }
+            .product-rating{
+                display: flex;
+                flex-direction: start;
+                .star-rating{
+                    
+                    .fa-solid{
+                        color: rgb(244, 220, 5);
+                        font-size: 0.8rem;
+                    }
+                    .fa-regular{
+                        color: rgb(189, 172, 172);
+                        font-size: 0.8rem;
+                    }
+                }
+                .count-rating{
+                }
+            }
+            .price{
+                del{
+                    color: gray;
+                    font-size: 1rem;
+                    font-weight: 700;
+                }
+                .ins-different{
+                    font-size: 1rem;
+                    font-weight: 700;
+                }
+                ins{
+                    color: rgb(220, 14, 14);
+                    font-size: 1.1rem;
+                    font-weight: 700;
+                    text-decoration: none;
+                }
+            }
+            .category2-fade-block{
+                .category2-button-group{
+                    .category2-button{
+                        border-radius: 30px;
+                        background-color: rgb(4, 60, 144);
+                        color: white;
+                        height: 2.5rem;
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+

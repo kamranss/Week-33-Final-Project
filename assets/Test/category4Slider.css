@@ -1,0 +1,38 @@
+.category2-producs{
+    position: relative;
+}
+.slick-prev{
+    position: absolute;
+    width: 20px;
+    top: 40%;
+    /* display: none !important; */
+}
+
+.slick-next{
+    position: absolute;
+    width: 20px;
+    top: 40%;
+    right: 10%;
+    /* display: none !important; */
+}
+
+
+.bs-prev{
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    top: 40%;
+    height: 60px;
+    color: black;
+    z-index: 100 !important;
+}
+
+.bs-next{
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    top: 40%;
+    right: 10%;
+    height: 20px;
+    z-index: 100 !important;
+}
