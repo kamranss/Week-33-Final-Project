@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.category2-right-side').slick({
         centerMode: true,
-        centerPadding: '60px',
+        centerPadding: '20px',
         slidesToShow: 5,
         responsive: [
           {
