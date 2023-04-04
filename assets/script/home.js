@@ -51,3 +51,7 @@ var x = setInterval(function() {
   document.querySelector(".minutes").textContent = minutes;
   document.querySelector(".seconds").textContent = seconds;
 }, 1000);
+
+
+// Nav 
+

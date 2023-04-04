@@ -10,10 +10,16 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style/home.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
+    <link rel="stylesheet" href="./assets/Test/category4Slider.css">
+    <link rel="stylesheet" href="./../Bacola/Bacola/assets/scss/index.css">
+    <!-- <link rel="stylesheet" href="./style/home.css"> -->
 
     
     <title>Document</title>
@@ -21,101 +27,243 @@
 
 <body>
 
-    <header class="header">
-        <nav class="nav-main">
-            <div class=" nav-container container">
-                <div class=" nav-box row">
-                    <!-- left side -->
-                    <div class="nav-leftSide col-auto">
-                        <ul class="nav-leftSide-ul col-12">
-                            <li><a href="">About Us</a></li>
-                            <li><a href="">My account</a></li>
-                            <li><a href="">Whishlist</a></li>
-                            <li><a href="">Order Trucking</a></li>
-                        </ul>
-                    </div>
-                    <!-- middle side -->
-                    <div class="nav-middleSide col-auto">
-                        <p class=""><i class="fa-solid fa-shield-halved"></i>100% Secure delivery without
-                            contacting the courier</p>
-                        <p class="need-help">Need help? Call Us: <span><a href="tel:0020500">+ 0020 500</a></span> </p>
-                    </div>
-                    <div class="nav-rightSide col-lg-2">
-                        <ul class=" ">
-                            <li class="">
-                                <a class="" href="">Eng<i class="fa-solid fa-angle-down"></i></a>
-                                <ul class="">
-                                    <li><a class="" href="#">English</a></li>
-                                    <li><a class="" href="#">Spanish</a></li>
-                                    <li><a class="" href="#">German</a></li>
-                                </ul>
-                            </li>
-                            <li class="">
-                                <a class="" href="">Usd<i class="fa-solid fa-angle-down"></i></a>
-                                <ul class="">
-                                    <li><a class="" href="#">USD</a></li>
-                                    <li><a class="" href="#">INR</a></li>
-                                    <li><a class="" href="#">GBP</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <hr class="hr">
-        <div class="container nav-second-part">
-            <div class="nav-second-part-row row">
-                <div class="d-flex justify-content-between align-item-center">
-                    <div class="nav-second-part-left-side col-lg-4">
-                        <div class="header-buttons hide-desktop col-2">
-                            <a href="#">
-                                <i class="klbth-icon-menu-thin"></i>
-                            </a>
-                        </div><!-- header-buttons -->
-                        <div class="logo col-12">
-                            <a href="https://klbtheme.com/bacola/" title="Bacola – Grocery Market and Food Theme">
-                                <img class="desktop-logo hide-mobile"
-                                    src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/bacola-logo.png"
-                                    alt="Bacola – Grocery Market and Food Theme">
+    <!-- Start AsideHeader -->
 
-                                <img class="mobile-logo hide-desktop col-12"
-                                    src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/bacola-logo-mobile.png"
-                                    alt="Bacola – Grocery Market and Food Theme">
-                                <span class="brand-description">Online Grocery Shopping Center</span>
-                            </a>
-                        </div><!-- site-brand -->
-                    </div>
-                    <div class="column column-center nav-second-part-middle-side">
-                        <div class="header-location site-location hide-mobile">
-                            <a href="#">
-                                <span class="location-description">Your Location</span>
-                                <div class="current-location">Select a Location</div>
-                            </a>
-                        </div>
-
-                        <div class="header-search">
-                            <form action="https://klbtheme.com/bacola/" class="search-form" role="search" method="get"
-                                id="searchform">
-                                <input type="search" value="" name="s" placeholder="Search for products..."
-                                    autocomplete="off">
-                                <button type="submit"><i class="klbth-icon-search"></i></button>
-                                <input type="hidden" name="post_type" value="product">
-                            </form>
-                        </div>
-                    </div>
-                </div>
+    <aside class="aside-header">
+        <div class="conatiner">
+          <div class="row">
+            <div class="covid">
+              <p class="covid-title">Due to the <strong>COVID 19</strong> epidemic, orders may be processed with a slight delay</p>
             </div>
+          </div>
         </div>
+      </aside>
 
-        <!-- Vertically centered scrollable modal -->
 
+    <header class="header">
+           <div class="container">
+              <div class="row">
+                <div class="top-header d-flex align-items-center gap-1 col-lg-12">
+                    <div class="left-side d-flex align-items-center justify-content-between col-lg-4 col-md-4">
+                        <nav class="top-header-nav d-flex align-item-center justify-content-start">
+                            <ul class="top-header-nav-list d-flex align-items-center gap-3 col-lg-12">
+                                <li class="top-header-nav-list-item"><a href="#">About Us</a></li>
+                                <li class="top-header-nav-list-item"><a href="#">My account</a></li>
+                                <li class="top-header-nav-list-item"><a href="#">Wishlist</a></li>
+                                <li class="top-header-nav-list-item"><a href="#">Order Tracking</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="right-side d-flex align-items-center justify-content-between col-lg-7 col-md-7">
+                      <div class="contact d-flex align-items-center">
+                          <div class="secure">
+                            <p><i class="fa-solid fa-shield"></i> 100% Secure delivery without contacting the courier</p>
+                          </div>
+                          <div class="call-us d-flex align-items-center">
+                            <p>Need help? Call Us: <a href="tel:+0020500"><strong style="color: #6EC1E4;">+ 0020 500</strong></a></p>
+                          </div>
+                      </div>
+                      <div class="language-money d-flex align-item-center justify-content-center col-lg-3 col-md-3">
+                        <nav class="language-money-list-nav d-flex align-item-center gap-1">
+                          <ul class="language-money-list d-flex align-items-center justify-content-between">
+                            <li class="language">
+                              <a href="#">English<i class="fa-solid fa-chevron-down"></i>
+                              </a>
+                              <ul class="languages-list ">
+                                <li class="languages-list-item"><a href="#">English</a></li>
+                                <li class="languages-list-item"><a href="#">Spanish</a></li>
+                                <li class="languages-list-item"><a href="#">German</a></li>
+                              </ul>
+                            </li>
+                            <li class="money">
+                              <a href="#">USD<i class="fa-solid fa-chevron-down"></i></a>
+                              <ul class="money-list">
+                                <li class="money-list-item"><a href="#">USD</a></li>
+                                <li class="money-list-item"><a href="#">INR</a></li>
+                                <li class="money-list-item"><a href="#">GBP</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                </div>
+                <div class="center-header d-flex justify-content-between align-items-center col-lg-12">
+                  <div class="header-canvas button-item">
+                    <a href="#">
+                      <i class="fa-solid fa-bars"></i>
+                    </a>
+                  </div>
+                  <div class="logo col-lg-2 col-md-3 col-sm-3">
+                        <a href="./index.html" title="Bacola - Grocery Market and Food Theme">
+                          <img src="./image/logo/bacola-logo.png" alt="logo">
+                          <span class="logo-text">Online Grocery Shopping Center</span>
+                        </a>
+                  </div>
+                  <div class="site-brand col-lg-2 col-md-2 col-sm-2">
+                        <a href="./index.html" title="Bacola - Grocery Market and Food Theme">
+                          <img class="mobile-logo hide-desktop"
+                          src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/bacola-logo-mobile.png"
+                          alt="Bacola – Grocery Market and Food Theme">
+                          <span class="brand-description">Online Grocery Shopping Center</span>
+                        </a>
+                  </div>
+                  <div class="location-search col-lg-5 col-md-5 col-sm-5 d-flex justify-content-between align-item-center">
+                    <div class="location col-lg-4 col-md-4 col-sm-4">
+                      <a href="#">
+                        <span class="your-location">Your Location</span>
+                        <p class="select-location">Select a Location</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </a>
+                    </div>
+                    <div class="search col-lg-5  col-md-12 col-sm-12">
+                      <form class="search-form" action="./index.html">
+                        <input class="input" type="text" placeholder="Search for products..." required>
+                        <input type="submit" class="search-button ">
+                        <i class="fa-solid fa-magnifying-glass"></i>               
+                      </form>
+                    </div>
+                  </div>
+                  <div class="accaunt col-lg-3 col-md-4 col-sm-5 d-flex justify-content-center gap-1 align-items-center">
+                    <div class="login">
+                      <div class="login-bg col-lg-4">
+                        <a href="">
+                          <i class="fa-regular fa-user"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="store col-lg-5">
+                      <a href="#">
+                        <div class="price">
+                          <span>$0.00</span>
+                        </div>
+                        <div class="shop">
+                          <i class="fa-solid fa-bag-shopping"></i>
+                          <span class="icon-up-span">0</span>
+                          <div class="shop-drop-down-card">
+                            <div class="shop-content">
+                              <div class="shop-basket-bg">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                              </div>
+                              <p class="basket-text">No products in the cart.</p>
+                            </div>
+                            <div class="shop-text">
+                              <p>We reduce shipping prices to only 2.49 €!</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </a>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-header-nav col-lg-12 col-md-12 col-sm-12 d-flex align-items-center justify-content-between">
+                  <div class="categories d-flex align-item-center justify-content-between col-lg-3 col-md-3 col-sm-3">
+                    <a href="" class="">
+                      <div class="all-categories d align-item-center justify-content-between col-lg-12">
+                        <i class="fa-solid fa-bars"></i>
+                        <h2 class="category-title">ALL CATEGORIES</h2>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div class="category-products">TOTAL <span>63</span> PRODUCTS</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="bottom-nav-bar col-lg-7 col-md-7 col-sm-7">
+                    <ul class="bottom-nav-list d-flex align-item-center justify-content-between">
+                      <li class="bottom-nav-list-item active-page"><a href="/index.html">HOME<i class="fa-solid fa-chevron-down"></i></a>
+                          <ul class="home-drop-down-list">
+                              <li class="home-drop-down-list-item"><a href="#">Home 1</a></li>
+                              <li class="home-drop-down-list-item"><a href="#">Home 2</a></li>
+                              <li class="home-drop-down-list-item"><a href="#">Home 3</a></li>
+                              <li class="home-drop-down-list-item"><a href="#">Home 4 </a></li>
+                              <li class="home-drop-down-list-item"><a href="#">Home 5</a></li>
+                          </ul>   
+                      </li>
+                      <li class="bottom-nav-list-item"><a href="#">SHOP<i class="fa-solid fa-chevron-down"></i></a>
+  
+                         <div class="shop-list-block d-flex align-items-center justify-content-around">
+                              <div class=" shop-list shop-list-dropdown">
+                               
+                                <ul class="shop-list">
+                                  <li class="home-drop-down-list-item list-head"><a href="#">shop list</a></li>
+                                  <br>
+                                  <li class="home-drop-down-list-item"><a href="#"> Shop Default</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Shop Right Sidebar</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Shop Wide</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">List Left Sidebar</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Load More Button</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Infinite Scrolling</a></li>
+                                </ul>
+                              </div>
+                              <div class="shop-list shop-list-dropdown">
+                                <ul class="shop-list">
+                                  <li class="home-drop-down-list-item list-head"><a href="#">Product Detail</a></li>
+                                  <br>
+                                  <li class="home-drop-down-list-item"><a href="#">Product Default</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Product Variable</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Product Grouped</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Product External</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Product Downloadable</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Product With Video</a></li>
+                                  <!-- <li class="home-drop-down-list-item"><a href="#">Product Types</a></li> -->
+                                </ul>
+                              </div>
+                              <div class="shop-list shop-list-dropdown">
+                              
+                                <ul class="shop-list">
+                                  <li class="home-drop-down-list-item list-head"><a href="#">Product Types</a></li>
+                                  <br>
+                                  <li class="home-drop-down-list-item"><a href="#">Single Type 1</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Single Type 2</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Single Type 3</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Single Type 4</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Thumbnails Left</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Zoom Image</a></li>
+                                </ul>
+                              </div>
+                              <div class="shop-list shop-list-dropdown">
+                                
+                                <ul class="shop-list">
+                                  <li class="home-drop-down-list-item list-head"><a href="#">Shop Pages</a></li>
+                                  <br>
+                                  <li class="home-drop-down-list-item"><a href="#">Cart</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Checkout</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">My account</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Wishlist</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Order Tracking</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Order on WhatsApp</a></li>
+                                </ul>
+                              </div>
+                              <div class="shop-list shop-list-dropdown">
+                                
+                                <ul class="shop-list">
+                                  <li class="home-drop-down-list-item list-head"><a href="#">Shop Layouts</a></li>
+                                  <br>
+                                  <li class="home-drop-down-list-item"><a href="#">Two Columns</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Three Columns</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Three Columns Wide</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Four Columns</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Four Columns Wide</a></li>
+                                  <li class="home-drop-down-list-item"><a href="#">Five Columns wide</a></li>
+                                </ul>
+                              </div>
+                         </div>
+                         
+                      </li>
+                      <li class="bottom-nav-list-item"><a href="#"><i class="fa-solid fa-bacon"></i>MEATS&SEAFOOD</a></li>
+                      <li class="bottom-nav-list-item"><a href="#"><i class="fa-solid fa-cookie"></i>BAKERY</a></li>
+                      <li class="bottom-nav-list-item"><a href="#"><i class="fa-solid fa-mug-hot"></i>BEVERAGES</a></li>
+                      <li class="bottom-nav-list-item"><a href="#">BLOG</a></li>
+                      <li class="bottom-nav-list-item"><a href="#">CONTACT</a></li>
+                    </ul>
+                  </div>
+                </div>
+                </div>
+           </div>
     </header>
-    <br>
-    <br>
-    <br>
 
-
+    <br>
     <!-- slider -->
     <div id="carouselExampleCaptions" class="carousel carouselExampleCaptions slide mb-5 slider" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -220,7 +368,7 @@
     </div>
 
 
-
+    <!-- category1 -->
     <section id="category-section">
         <div id="categories" class="container">
             <div class="row">
@@ -359,9 +507,8 @@
             </div>
         </div>
     </section>
-    <br>
-    <br>
-
+    <br><br>
+    <!-- category2 -->
     <section id="category2-section">
         <div class="container">
             <div class="row d-flex justify-content-between">
@@ -429,7 +576,7 @@
                     </div>
                 </div>
 
-                <div class="products category2-right-side col-lg-7  col-md-12 ">
+                <div class="products category22-right-side col-lg-7  col-md-12 ">
                     <div class="row">
                         <div class="category2-product category col-lg-4 col-md-6 col-sm-12 category-first d-flex justify-content-between align-items-center category-border ">
                             <div class="product-wrapper product-type-1">
@@ -894,12 +1041,1188 @@
             </div>
         </div>
     </section>
+    <!-- <br><br> -->
+    <!-- category3 -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="category3 d-flex justify-content-between mt-5">
+                    <div class="banner-wrapper col-lg-5 col-md-5 col-sm-12 ">
+                        <div class="banner-content col-lg-8 col-md-12">
+                            <div class="content-header col-lg-12">
+                                <div class="discount-text color-success">Weekend Discount 40%</div>
+                            </div>
+                            <div class="content-main col-lg-12">
+                                <h3 class="entry-title color-text-light col-lg-12">Cookie and Ice Cream</h3>
+                                <div class="entry-text color-info-dark">Bacola Weekend Discount</div>
+                            </div>
+                            <button class="btn btn-primary button-primary2 d-flex justify-content-center align-item-center">
+                                <a
+                                    href="https://klbtheme.com/bacola/product/blue-diamond-almonds-lightly-salted/"
+                                    class="col-lg-6 d-flex justify-content-center align-item-center" >
+                                    Shop Now
+                                </a>
+                            </button>
+                        </div>
+                        <div class="banner-thumbnail">
+                            <img decoding="async"
+                                style="width: 100%;"
+                                class="h-auto"
+                                src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/bacola-banner-11.jpg"
+                                alt="banner">
+                        </div>
+                        <a
+                            href="https://klbtheme.com/bacola/product/blue-diamond-almonds-lightly-salted/"
+                            class="overlay-link">
+                        </a>
+                    </div>
+                    <div class="banner-wrapper col-lg-5 col-md-5 col-sm-12">
+                        <div class="banner-content">
+                            <div class="content-header">
+                                <div class="discount-text color-success">Weekend Discount 30%</div>
+                            </div>
+                            <div class="content-main">
+                                <h3 class="entry-title color-text-light">Cookie and Ice Cream</h3>
+                                <div class="entry-text color-info-dark">Bacola Weekend Discount</div>
+                            </div>
+                            <button class="btn btn-primary button-primary2 d-flex justify-content-center align-item-center">
+                                <a
+                                    href="https://klbtheme.com/bacola/product/blue-diamond-almonds-lightly-salted/"
+                                    class="col-lg-6 d-flex justify-content-center align-item-center" >
+                                    Shop Now
+                                </a>
+                            </button>
+                        </div>
+                        <div class="banner-thumbnail">
+                            <img decoding="async"
+                                style="width: 100%;"
+                                class="h-auto"
+                                src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/05/bacola-banner-12.jpg"
+                                alt="banner">
+                        </div>
+                        <a
+                            href="https://klbtheme.com/bacola/shop/?filter_cat=31,32"
+                            class="overlay-link">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <br><br> -->
+    <!-- category4 Slider2 -->
+    <div class="container">
+        <div class="row">
+            <div class="products category2-right-side col-lg-12 col-md-12 mt-5">
+                <div class="category2-product category col-lg-2 col-md-6 col-sm-12 category-first d-flex justify-content-between align-items-center category-border ">
+                    <div class="product-wrapper product-wrapper-slider product-type-1">
+                        <div class="thumbnail-wrapper">
+                            <div class="product-badges">
+                                <span class="badge style-1 onsale col-lg-5 col-md-5 col-sm-5 col-5">
+                                    23%
+                                </span>
+                            
+                                <span class="badge style-1" style="background-color: #71778e;">
+                                    recommended
+                                </span>
+                            </div>
+                            <a
+                                href="https://klbtheme.com/bacola/product/all-natural-italian-style-chicken-meatballs/"><img
+                                style="width: 100%;" class="h-auto"
+                                    decoding="async"
+                                    src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg"
+                                    alt="All Natural Italian-Style Chicken Meatballs">
+                            </a>
+                            <div class="product-buttons">
+                                <div class="screen-size-max p-2">
+                                    <a href="430" class="detail-bnt quick-view-button">
+                                        <svg class="svg col-lg-1 "
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path class="path"
+                                                d="M128 32V0H16C7.163 0 0 7.163 0 16v112h32V54.56L180.64 203.2l22.56-22.56L54.56 32H128zM496 0H384v32h73.44L308.8 180.64l22.56 22.56L480 54.56V128h32V16c0-8.837-7.163-16-16-16zM480 457.44L331.36 308.8l-22.56 22.56L457.44 480H384v32h112c8.837 0 16-7.163 16-16V384h-32v73.44zM180.64 308.64L32 457.44V384H0v112c0 8.837 7.163 16 16 16h112v-32H54.56L203.2 331.36l-22.56-22.72z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="heart-button p-2">
+                                    <a href="">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-wrapper">
+                            <h3 class="product-title"><a
+                                    href="https://klbtheme.com/bacola/product/all-natural-italian-style-chicken-meatballs/"
+                                    title="All Natural Italian-Style Chicken Meatballs">All
+                                    Natural Italian-Style Chicken Meatballs</a></h3>
+                            <div class="product-meta">
+                                <div class="product-available in-stock">In Stock</div>
+                            </div>
+                            <div class="product-rating d-flex align-items-center">
+                                <div class="star-rating d-flex align-items-center" role="img" aria-label="Rated 4.00 out of 5">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="count-rating d-flex align-items-center ps-1">
+                                    1
+                                </div>
+                                
+                            </div>
+                            <span class="price">
+                                <del>$9.35</del>
+                                <ins>$7.25</ins>
+                            </span>
+                            <div class="category2-fade-block-vh col-lg-10">
+                                <div class="category2-button-group cart-with-quantity ">
+                                    <button type="button" class="category2-button col-lg-12 col-md-8">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content-fade border-info" style="margin-bottom: -49px;">
+                    </div>
+                </div>
+                <div class="category2-product category col-lg-2 col-md-6 col-sm-12 category-first d-flex justify-content-between align-items-center category-border">
+                    <div class="product-wrapper product-wrapper-slider product-type-1">
+                        <div class="thumbnail-wrapper">
+                            <div class="product-badges ">
+                                <span class="badge onsale col-lg-12">24%</span>
+                            </div><a
+                                href="https://klbtheme.com/bacola/product/angies-boomchickapop-sweet-salty-kettle-corn/"><img 
+                                style="width: 100%;" class="h-auto"
+                                    decoding="async"
+                                    src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-60-346x310.jpg"
+                                    alt="Angie’s Boomchickapop Sweet &amp; Salty Kettle Corn"></a>
+                            <div class="product-buttons">
+                                <div class="screen-size-max p-2">
+                                    <a href="430" class="detail-bnt quick-view-button">
+                                        <svg class="svg col-lg-1 "
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path class="path"
+                                                d="M128 32V0H16C7.163 0 0 7.163 0 16v112h32V54.56L180.64 203.2l22.56-22.56L54.56 32H128zM496 0H384v32h73.44L308.8 180.64l22.56 22.56L480 54.56V128h32V16c0-8.837-7.163-16-16-16zM480 457.44L331.36 308.8l-22.56 22.56L457.44 480H384v32h112c8.837 0 16-7.163 16-16V384h-32v73.44zM180.64 308.64L32 457.44V384H0v112c0 8.837 7.163 16 16 16h112v-32H54.56L203.2 331.36l-22.56-22.72z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="heart-button p-2">
+                                    <a href="">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-wrapper">
+                            <h3 class="product-title"><a
+                                    href="https://klbtheme.com/bacola/product/angies-boomchickapop-sweet-salty-kettle-corn/"
+                                    title="Angie’s Boomchickapop Sweet &amp; Salty Kettle Corn">Angie’s
+                                    Boomchickapop Sweet &amp; Salty Kettle Corn</a></h3>
+                            <div class="product-meta">
+                                <div class="product-available in-stock">In Stock</div>
+                            </div>
+                            <div class="product-rating d-flex align-items-center">
+                                <div class="star-rating d-flex align-items-center" role="img" aria-label="Rated 4.00 out of 5">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="count-rating d-flex align-items-center ps-1">
+                                    1
+                                </div>
+                            </div>
+                           
+                            <span class="price">
+                                <del>$4.29</del>
+                                <ins>$3.29</ins>
+                            </span>
+                            <div class="category2-fade-block-vh col-lg-10">
+                                <div class="category2-button-group cart-with-quantity ">
+                                    <button type="button" class="category2-button col-lg-12 col-md-8">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content-fade border-info" style="margin-bottom: -49px;">
+                    </div>
+                </div>
+                <div class="category2-product category col-lg-2 col-md-6 col-sm-12 category-first d-flex justify-content-between align-items-center category-border">
+                    <div class="product-wrapper product-wrapper-slider product-type-1">
+                        <div class="thumbnail-wrapper">
+                            <div class="product-badges">
+                                <span class="badge style-1 onsale col-lg-8 col-md-8 col-sm-8 col-8">19%</span><span
+                                    class="badge style-2"
+                                    style="background-color: #e5f8ed;color: #038e42;">organic</span>
+                            </div>
+                            <a
+                                href="https://klbtheme.com/bacola/product/field-roast-chao-cheese-creamy-original/"><img
+                                style="width: 100%;" class="h-auto"
+                                    decoding="async"
+                                    src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-46-346x310.jpg"
+                                    alt="Field Roast Chao Cheese Creamy Original">
+                            </a>
+                            <div class="product-buttons">
+                                <div class="screen-size-max p-2">
+                                    <a href="430" class="detail-bnt quick-view-button">
+                                        <svg class="svg col-lg-1 "
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path class="path"
+                                                d="M128 32V0H16C7.163 0 0 7.163 0 16v112h32V54.56L180.64 203.2l22.56-22.56L54.56 32H128zM496 0H384v32h73.44L308.8 180.64l22.56 22.56L480 54.56V128h32V16c0-8.837-7.163-16-16-16zM480 457.44L331.36 308.8l-22.56 22.56L457.44 480H384v32h112c8.837 0 16-7.163 16-16V384h-32v73.44zM180.64 308.64L32 457.44V384H0v112c0 8.837 7.163 16 16 16h112v-32H54.56L203.2 331.36l-22.56-22.72z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="heart-button p-2">
+                                    <a href="">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-wrapper">
+                            <h3 class="product-title"><a
+                                    href="https://klbtheme.com/bacola/product/field-roast-chao-cheese-creamy-original/"
+                                    title="Field Roast Chao Cheese Creamy Original">Field Roast
+                                    Chao Cheese Creamy Original</a></h3>
+                            <div class="product-meta">
+                                <div class="product-available in-stock">In Stock</div>
+                            </div>
+                            <div class="product-rating d-flex align-items-center">
+                                <div class="star-rating d-flex align-items-center" role="img" aria-label="Rated 4.00 out of 5">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="count-rating d-flex align-items-center ps-1">
+                                    1
+                                </div>
+                            </div>
+                          
+                            <span class="price">
+                                <del>$24.00</del>
+                                <ins>$19.50</ins>
+                            </span>
+                            <div class="category2-fade-block-vh col-lg-10">
+                                <div class="category2-button-group cart-with-quantity ">
+                                        <button type="button" class="category2-button col-lg-12 col-md-8">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content-fade border-info" style="margin-bottom: -49px;">
+                    </div>
+                </div>
+                <div class="category2-product category col-lg-2 col-md-6 col-sm-12 category-first d-flex justify-content-between align-items-center category-border">
+                    <div class="product-wrapper product-wrapper-slider product-type-1">
+                        <div class="thumbnail-wrapper">
+                            <div class="product-badges"></div>
+                            <a
+                                href="https://klbtheme.com/bacola/product/foster-farms-takeout-crispy-classic-buffalo-wings/"><img
+                                style="width: 100%;" class="h-auto"
+                                    decoding="async"
+                                    src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-45-346x310.jpg"
+                                    alt="Foster Farms Takeout Crispy Classic Buffalo Wings">
+                            </a>
+                            <div class="product-buttons">
+                                <div class="screen-size-max p-2">
+                                    <a href="430" class="detail-bnt quick-view-button">
+                                        <svg class="svg col-lg-1 "
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path class="path"
+                                                d="M128 32V0H16C7.163 0 0 7.163 0 16v112h32V54.56L180.64 203.2l22.56-22.56L54.56 32H128zM496 0H384v32h73.44L308.8 180.64l22.56 22.56L480 54.56V128h32V16c0-8.837-7.163-16-16-16zM480 457.44L331.36 308.8l-22.56 22.56L457.44 480H384v32h112c8.837 0 16-7.163 16-16V384h-32v73.44zM180.64 308.64L32 457.44V384H0v112c0 8.837 7.163 16 16 16h112v-32H54.56L203.2 331.36l-22.56-22.72z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="heart-button p-2">
+                                    <a href="">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-wrapper">
+                            <h3 class="product-title"><a
+                                    href="https://klbtheme.com/bacola/product/foster-farms-takeout-crispy-classic-buffalo-wings/"
+                                    title="Foster Farms Takeout Crispy Classic Buffalo Wings">Foster
+                                    Farms Takeout Crispy Classic Buffalo Wings</a></h3>
+                            <div class="product-meta">
+                                <div class="product-available in-stock">In Stock</div>
+                            </div>
+                            <div class="product-rating d-flex align-items-center">
+                                <div class="star-rating d-flex align-items-center" role="img" aria-label="Rated 4.00 out of 5">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="count-rating d-flex align-items-center ps-1">
+                                    1
+                                </div>
+                            </div>
+                          
+                            <span class="price">
+                                <ins class="ins-different">$7.25</ins><span> -</span>
+                                <ins>$49-99</ins>
+                            </span>
+                            <div class="category2-fade-block-vh col-lg-10">
+                                <div class="category2-button-group cart-with-quantity ">
+                                  
+                                        <button type="button" class="category2-button col-lg-12 col-md-8">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content-fade border-info" style="margin-bottom: -49px;">
+                    </div>
+                </div>
+                <div class="category2-product category col-lg-2 col-md-6 col-sm-12 category-first d-flex justify-content-between align-items-center category-border">
+                    <div class="product-wrapper product-wrapper-slider product-type-1">
+                        <div class="thumbnail-wrapper">
+                            <div class="product-badges">
+                                <span class="badge style-1 onsale col-lg-8 col-md-8 col-sm-8 col-8">10%</span><span
+                                    class="badge style-2"
+                                    style="background-color: #e5f8ed;color: #038e42;">organic</span>
+                            </div>
+                            <a
+                                href="https://klbtheme.com/bacola/product/blue-diamond-almonds-lightly-salted/"><img
+                                style="width: 100%;" class="h-auto"
+                                    decoding="async"
+                                    src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-59-346x310.jpg"
+                                    alt="Blue Diamond Almonds Lightly Salted">
+                            </a>
+                            <div class="product-buttons">
+                                <div class="screen-size-max p-2">
+                                    <a href="430" class="detail-bnt quick-view-button">
+                                        <svg class="svg col-lg-1 "
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path class="path"
+                                                d="M128 32V0H16C7.163 0 0 7.163 0 16v112h32V54.56L180.64 203.2l22.56-22.56L54.56 32H128zM496 0H384v32h73.44L308.8 180.64l22.56 22.56L480 54.56V128h32V16c0-8.837-7.163-16-16-16zM480 457.44L331.36 308.8l-22.56 22.56L457.44 480H384v32h112c8.837 0 16-7.163 16-16V384h-32v73.44zM180.64 308.64L32 457.44V384H0v112c0 8.837 7.163 16 16 16h112v-32H54.56L203.2 331.36l-22.56-22.72z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="heart-button p-2">
+                                    <a href="">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-wrapper">
+                            <h3 class="product-title"><a
+                                    href="https://klbtheme.com/bacola/product/blue-diamond-almonds-lightly-salted/"
+                                    title="Blue Diamond Almonds Lightly Salted">Blue Diamond
+                                    Almonds Lightly Salted</a></h3>
+                            <div class="product-meta">
+                                <div class="product-available in-stock">In Stock</div>
+                            </div>
+                            <div class="product-rating d-flex align-items-center">
+                                <div class="star-rating d-flex align-items-center" role="img" aria-label="Rated 4.00 out of 5">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="count-rating d-flex align-items-center ps-1">
+                                    1
+                                </div>
+                            </div>
+                           
+                            <span class="price">
+                                <del>$11.68</del>
+                                <ins>$10-58</ins>
+                            </span>  
+                            <div class="category2-fade-block-vh col-lg-10">
+                                <div class="category2-button-group cart-with-quantity ">
+                                        <button type="button" class="category2-button col-lg-12 col-md-8">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content-fade border-info" style="margin-bottom: -49px;">
+                    </div>
+                </div>
+                <div class="category2-product category col-lg-2 col-md-6 col-sm-12 category-first d-flex justify-content-between align-items-center category-border">
+                    <div class="product-wrapper product-wrapper-slider  product-type-1">
+                        <div class="thumbnail-wrapper">
+                            <div class="product-badges">
+                                <span class="badge  onsale col-lg-12">12%</span>
+                            </div>
+                            <a href="https://klbtheme.com/bacola/product/blueberries-1-pint-package/"><img
+                                style="width: 100%;" class="h-auto"
+                                    decoding="async"
+                                    src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-58-346x310.jpg"
+                                    alt="Blueberries – 1 Pint Package">
+                            </a>
+                            <div class="product-buttons">
+                                <div class="screen-size-max p-2">
+                                    <a href="430" class="detail-bnt quick-view-button">
+                                        <svg class="svg col-lg-1 "
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path class="path"
+                                                d="M128 32V0H16C7.163 0 0 7.163 0 16v112h32V54.56L180.64 203.2l22.56-22.56L54.56 32H128zM496 0H384v32h73.44L308.8 180.64l22.56 22.56L480 54.56V128h32V16c0-8.837-7.163-16-16-16zM480 457.44L331.36 308.8l-22.56 22.56L457.44 480H384v32h112c8.837 0 16-7.163 16-16V384h-32v73.44zM180.64 308.64L32 457.44V384H0v112c0 8.837 7.163 16 16 16h112v-32H54.56L203.2 331.36l-22.56-22.72z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="heart-button p-2">
+                                    <a href="">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-wrapper">
+                            <h3 class="product-title product-title-2"><a
+                                    href="https://klbtheme.com/bacola/product/blueberries-1-pint-package/"
+                                    title="Blueberries – 1 Pint Package">Blueberries – 1 Pint
+                                    Package</a></h3>
+                            <div class="product-meta">
+                                <div class="product-available in-stock">In Stock</div>
+                            </div>
+                            <div class="product-rating d-flex align-items-center">
+                                <div class="star-rating d-flex align-items-center" role="img" aria-label="Rated 4.00 out of 5">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="count-rating d-flex align-items-center ps-1">
+                                    1
+                                </div>
+                            </div>
+                          
+                            <span class="price">
+                                <del>$4.49</del>
+                                <ins>$3.99</ins>
+                            </span> 
+                            <div class="category2-fade-block-vh col-lg-10">
+                                <div class="category2-button-group cart-with-quantity ">
+                                        <button type="button" class="category2-button col-lg-12 col-md-8">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content-fade border-info" style="margin-bottom: -49px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <br><br> -->
+    <!-- line -->
+    <div class="container">
+        <div class="row">
+            <div class="line col-lg-12 d-flex align-items-center justify-content-center mt-5">
+                <h4>
+                    SAVE AN EXTRA 5-10 % ON EVERY AUTOSHIP ORDER !
+                </h4>
+            </div>
+        </div>
+    </div>
+    <!-- category 5 -->
+    <div id="category5-section">
+        <div class="container">
+            <div class="row">
+                <div class="products category25-right-side col-lg-12  col-md-10  ms-4 mt-5">
+                    <div class="row">
+                        <div class="category2-product category col-lg-3_3 col-md-6 col-sm-12 category-first d-flex justify-content-between align-items-center category-border ">
+                            <div class="product-wrapper product-type-1">
+                                <div class="thumbnail-wrapper">
+                                    <div class="product-badges">
+                                        <span class="badge style-1 onsale col-lg-5 col-md-5 col-sm-5 col-5">
+                                            26%
+                                        </span>
+                                    
+                                        <span class="badge style-1" style="background-color: #71778e; visibility: hidden !important;">
+                                            recommended
+                                        </span>
+                                    </div>
+                                    <a
+                                        href="https://klbtheme.com/bacola/product/zevia-kidz-strawberry-lemonade-zero-calorie-soda/"><img 
+                                        style="width: 100%;" class="h-auto"
+                                        decoding="async"
+                                        src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-346x310.jpg"
+                                        alt="Zevia Kidz Strawberry Lemonade Zero Calorie Soda">
+                                     </a>
+                                    <div class="product-buttons">
+                                        <div class="screen-size-max p-2">
+                                            <a href="430" class="detail-bnt quick-view-button">
+                                                <svg class="svg col-lg-1 "
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path class="path"
+                                                        d="M128 32V0H16C7.163 0 0 7.163 0 16v112h32V54.56L180.64 203.2l22.56-22.56L54.56 32H128zM496 0H384v32h73.44L308.8 180.64l22.56 22.56L480 54.56V128h32V16c0-8.837-7.163-16-16-16zM480 457.44L331.36 308.8l-22.56 22.56L457.44 480H384v32h112c8.837 0 16-7.163 16-16V384h-32v73.44zM180.64 308.64L32 457.44V384H0v112c0 8.837 7.163 16 16 16h112v-32H54.56L203.2 331.36l-22.56-22.72z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="heart-button p-2">
+                                            <a href="">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper">
+                                    <h3 class="product-title">
+                                        <a
+                                            href="https://klbtheme.com/bacola/product/zevia-kidz-strawberry-lemonade-zero-calorie-soda/"
+                                            title="Zevia Kidz Strawberry Lemonade Zero Calorie Soda">Zevia
+                                            Kidz Strawberry Lemonade Zero Calorie Soda
+                                        </a>
+                                    </h3>
+                                    <div class="product-meta">
+                                        <div class="product-available in-stock">In Stock</div>
+                                    </div>
+                                    <div class="product-rating d-flex align-items-center">
+                                        <div class="star-rating d-flex align-items-center" role="img" aria-label="Rated 4.00 out of 5">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="count-rating d-flex align-items-center ps-1">
+                                            1
+                                        </div>
+                                        
+                                    </div>
+                                    <span class="price">
+                                        <del>$7.95</del>
+                                        <ins>$5.95</ins>
+                                    </span>
+                                    <div class="category2-fade-block">
+                                        <div class="category2-button-group cart-with-quantity ">
+                                            <button type="button" class="category2-button col-lg-12 col-md-8">Add to cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content-fade border-info" style="margin-bottom: -49px;">
+                            </div>
+                        </div>
+                        <div class="category2-product category col-lg-3_3 col-md-6 col-sm-12 category-first d-flex justify-content-between align-items-center category-border">
+                            <div class="product-wrapper product-type-1">
+                                <div class="thumbnail-wrapper">
+                                    <div class="product-badges ">
+                                        <span class="badge onsale col-lg-12">40%</span>
+                                    </div>
+                                        <a href="https://klbtheme.com/bacola/product/wheat-thins-original-crackers/"><img decoding="async"
+                                                style="width: 100%;" class="h-auto"
+                                                src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-2-346x310.jpg"
+                                                alt="Wheat Thins Original Crackers">
+                                        </a>
+                                    <div class="product-buttons">
+                                        <div class="screen-size-max p-2">
+                                            <a href="430" class="detail-bnt quick-view-button">
+                                                <svg class="svg col-lg-1 "
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path class="path"
+                                                        d="M128 32V0H16C7.163 0 0 7.163 0 16v112h32V54.56L180.64 203.2l22.56-22.56L54.56 32H128zM496 0H384v32h73.44L308.8 180.64l22.56 22.56L480 54.56V128h32V16c0-8.837-7.163-16-16-16zM480 457.44L331.36 308.8l-22.56 22.56L457.44 480H384v32h112c8.837 0 16-7.163 16-16V384h-32v73.44zM180.64 308.64L32 457.44V384H0v112c0 8.837 7.163 16 16 16h112v-32H54.56L203.2 331.36l-22.56-22.72z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="heart-button p-2">
+                                            <a href="">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper">
+                                    <h3 class="product-title"><a href="https://klbtheme.com/bacola/product/wheat-thins-original-crackers/"
+                                            title="Wheat Thins Original Crackers">Wheat Thins Original
+                                            Crackers</a>
+                                    </h3>
+                                    <div class="product-meta">
+                                        <div class="product-available in-stock">In Stock</div>
+                                    </div>
+                                    <div class="product-rating d-flex align-items-center">
+                                        <div class="star-rating d-flex align-items-center" role="img" aria-label="Rated 4.00 out of 5">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="count-rating d-flex align-items-center ps-1">
+                                            1
+                                        </div>
+                                    </div>
+                                   
+                                    <span class="price">
+                                        <del>$5.00</del>
+                                        <ins>$3.00</ins>
+                                    </span>
+                                    <div class="category2-fade-block">
+                                        <div class="category2-button-group cart-with-quantity ">
+                                            <button type="button" class="category2-button col-lg-12 col-md-8">Add to cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content-fade border-info" style="margin-bottom: -49px;">
+                            </div>
+                        </div>
+                        <div class="category2-product category col-lg-3_3 col-md-6 col-sm-12 category-first d-flex justify-content-between align-items-center category-border">
+                            <div class="product-wrapper product-type-1">
+                                <div class="thumbnail-wrapper">
+                                    <div class="product-badges">
+                                        <span class="badge style-1 onsale col-lg-8 col-md-8 col-sm-8 col-8">26%</span><span
+                                            class="badge style-2"
+                                            style="background-color: #e5f8ed;color: #038e42; visibility: hidden;">organic</span>
+                                    </div>
+                                    
+                                    <a href="https://klbtheme.com/bacola/product/werthers-original-caramel-hard-candies/"><img decoding="async"
+                                            style="width: 100%;" class="h-auto"
+                                            src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg"
+                                            alt="Werther’s Original Caramel Hard Candies">
+                                    </a>
+                                    <div class="product-buttons">
+                                        <div class="screen-size-max p-2">
+                                            <a href="430" class="detail-bnt quick-view-button">
+                                                <svg class="svg col-lg-1 "
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path class="path"
+                                                        d="M128 32V0H16C7.163 0 0 7.163 0 16v112h32V54.56L180.64 203.2l22.56-22.56L54.56 32H128zM496 0H384v32h73.44L308.8 180.64l22.56 22.56L480 54.56V128h32V16c0-8.837-7.163-16-16-16zM480 457.44L331.36 308.8l-22.56 22.56L457.44 480H384v32h112c8.837 0 16-7.163 16-16V384h-32v73.44zM180.64 308.64L32 457.44V384H0v112c0 8.837 7.163 16 16 16h112v-32H54.56L203.2 331.36l-22.56-22.72z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="heart-button p-2">
+                                            <a href="">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper">
+                                    <h3 class="product-title"><a href="https://klbtheme.com/bacola/product/werthers-original-caramel-hard-candies/"
+                                            title="Werther’s Original Caramel Hard Candies">Werther’s
+                                            Original Caramel Hard Candies</a></h3>
+                                    <div class="product-meta">
+                                        <div class="product-available in-stock">In Stock</div>
+                                    </div>
+                                    <div class="product-rating d-flex align-items-center">
+                                        <div class="star-rating d-flex align-items-center" role="img" aria-label="Rated 4.00 out of 5">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="count-rating d-flex align-items-center ps-1">
+                                            1
+                                        </div>
+                                    </div>
+                                  
+                                    <span class="price">
+                                        <del>$20.00</del>
+                                        <ins>$14.97</ins>
+                                    </span>
+                                    <div class="category2-fade-block">
+                                        <div class="category2-button-group cart-with-quantity ">
+                                           
+                                                <button type="button" class="category2-button col-lg-12 col-md-8">Add to cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content-fade border-info" style="margin-bottom: -49px;">
+                            </div>
+                        </div>
+                        <div class="category2-product category col-lg-3_3 col-md-6 col-sm-12 category-first d-flex justify-content-between align-items-center category-border">
+                            <div class="product-wrapper product-type-1">
+                                <div class="thumbnail-wrapper">
+                                    <div class="product-badges"><span class="badge  onsale">26%</span></div>
+                                    <a href="https://klbtheme.com/bacola/product/warrior-blend-organic/"><img style="width: 100%;" class="h-auto"
+                                            decoding="async"
+                                            src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-4-346x310.jpg"
+                                            alt="Warrior Blend Organic"></a>
+                                    <div class="product-buttons">
+                                        <div class="screen-size-max p-2">
+                                            <a href="430" class="detail-bnt quick-view-button">
+                                                <svg class="svg col-lg-1 "
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path class="path"
+                                                        d="M128 32V0H16C7.163 0 0 7.163 0 16v112h32V54.56L180.64 203.2l22.56-22.56L54.56 32H128zM496 0H384v32h73.44L308.8 180.64l22.56 22.56L480 54.56V128h32V16c0-8.837-7.163-16-16-16zM480 457.44L331.36 308.8l-22.56 22.56L457.44 480H384v32h112c8.837 0 16-7.163 16-16V384h-32v73.44zM180.64 308.64L32 457.44V384H0v112c0 8.837 7.163 16 16 16h112v-32H54.56L203.2 331.36l-22.56-22.72z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="heart-button p-2">
+                                            <a href="">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper">
+                                    <h3 class="product-title"><a
+                                        href="https://klbtheme.com/bacola/product/warrior-blend-organic/"
+                                        title="Warrior Blend Organic">Warrior Blend Organic</a>
+                                    </h3>
+                                    <div class="product-meta">
+                                        <div class="product-available in-stock">In Stock</div>
+                                    </div>
+                                    <div class="product-rating d-flex align-items-center">
+                                        <div class="star-rating d-flex align-items-center" role="img" aria-label="Rated 4.00 out of 5">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="count-rating d-flex align-items-center ps-1">
+                                            1
+                                        </div>
+                                    </div>
+                                    
+                                    <span class="price">
+                                        <ins class="ins-different">$39.00</ins><span> -</span>
+                                        <ins>$29.00</ins>
+                                    </span>
+                                    <div class="category2-fade-block">
+                                        <div class="category2-button-group cart-with-quantity ">
+                                                <button type="button" class="category2-button col-lg-12 col-md-8">Add to cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content-fade border-info" style="margin-bottom: -49px;">
+                            </div>
+                        </div>
+                        <div class="category2-product category col-lg-3_3 col-md-6 col-sm-12 category-first d-flex justify-content-between align-items-center category-border">
+                            <div class="product-wrapper product-type-1">
+                                <div class="thumbnail-wrapper">
+                                    <div class="product-badges">
+                                        <span class="badge style-1 onsale col-lg-8 col-md-8 col-sm-8 col-8">14%</span><span
+                                            class="badge style-2"
+                                            style="background-color: #e5f8ed;color: #038e42; visibility: hidden;">organic</span>
+                                    </div>
+                                   
+                                    <a href="https://klbtheme.com/bacola/product/vital-farms-pasture-raised-egg-bites-bacon-cheddar/"><img
+                                            style="width: 100%;" class="h-auto" decoding="async"
+                                            src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-5-346x310.jpg"
+                                            alt="Vital Farms Pasture-Raised Egg Bites Bacon &amp; Cheddar"></a>
+                                    <div class="product-buttons">
+                                        <div class="screen-size-max p-2">
+                                            <a href="430" class="detail-bnt quick-view-button">
+                                                <svg class="svg col-lg-1 "
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path class="path"
+                                                        d="M128 32V0H16C7.163 0 0 7.163 0 16v112h32V54.56L180.64 203.2l22.56-22.56L54.56 32H128zM496 0H384v32h73.44L308.8 180.64l22.56 22.56L480 54.56V128h32V16c0-8.837-7.163-16-16-16zM480 457.44L331.36 308.8l-22.56 22.56L457.44 480H384v32h112c8.837 0 16-7.163 16-16V384h-32v73.44zM180.64 308.64L32 457.44V384H0v112c0 8.837 7.163 16 16 16h112v-32H54.56L203.2 331.36l-22.56-22.72z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="heart-button p-2">
+                                            <a href="">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper">
+                                    <h3 class="product-title"><a
+                                        href="https://klbtheme.com/bacola/product/vital-farms-pasture-raised-egg-bites-bacon-cheddar/"
+                                        title="Vital Farms Pasture-Raised Egg Bites Bacon &amp; Cheddar">Vital
+                                        Farms Pasture-Raised Egg Bites Bacon &amp; Cheddar</a></h3>
+                                    <div class="product-meta">
+                                        <div class="product-available in-stock">In Stock</div>
+                                    </div>
+                                    <div class="product-rating d-flex align-items-center">
+                                        <div class="star-rating d-flex align-items-center" role="img" aria-label="Rated 4.00 out of 5">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="count-rating d-flex align-items-center ps-1">
+                                            1
+                                        </div>
+                                    </div>
+                                    
+                                    <span class="price">
+                                        <del>$29.00</del>
+                                        <ins>$25.00</ins>
+                                    </span>  
+                                    <div class="category2-fade-block">
+                                        <div class="category2-button-group cart-with-quantity ">
+                                           
+                                                <button type="button" class="category2-button col-lg-12 col-md-8">Add to cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content-fade border-info" style="margin-bottom: -49px;">
+                            </div>
+                        </div>
+                        <div class="category2-product category col-lg-3_3 col-md-6 col-sm-12 category-first d-flex justify-content-between align-items-center category-border">
+                            <div class="product-wrapper product-type-1">
+                                <div class="thumbnail-wrapper">
+                                    <div class="product-badges">
+                                        <span class="badge  onsale col-lg-12">38%</span>
+                                    </div>
+                                  
+                                    <a href="https://klbtheme.com/bacola/product/usda-choice-angus-beef-stew-meat/"><img style="width: 100%;" class="h-auto"
+                                            decoding="async"
+                                            src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-7-346x310.jpg"
+                                            alt="USDA Choice Angus Beef Stew Meat"></a>
+                                    <div class="product-buttons">
+                                        <div class="screen-size-max p-2">
+                                            <a href="430" class="detail-bnt quick-view-button">
+                                                <svg class="svg col-lg-1 "
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path class="path"
+                                                        d="M128 32V0H16C7.163 0 0 7.163 0 16v112h32V54.56L180.64 203.2l22.56-22.56L54.56 32H128zM496 0H384v32h73.44L308.8 180.64l22.56 22.56L480 54.56V128h32V16c0-8.837-7.163-16-16-16zM480 457.44L331.36 308.8l-22.56 22.56L457.44 480H384v32h112c8.837 0 16-7.163 16-16V384h-32v73.44zM180.64 308.64L32 457.44V384H0v112c0 8.837 7.163 16 16 16h112v-32H54.56L203.2 331.36l-22.56-22.72z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="heart-button p-2">
+                                            <a href="">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper">
+                                    <h3 class="product-title"><a
+                                        href="https://klbtheme.com/bacola/product/usda-choice-angus-beef-stew-meat/"
+                                        title="USDA Choice Angus Beef Stew Meat">USDA Choice Angus
+                                        Beef Stew Meat</a>
+                                    </h3>
+                                    <div class="product-meta">
+                                        <div class="product-available in-stock">In Stock</div>
+                                    </div>
+                                    <div class="product-rating d-flex align-items-center">
+                                        <div class="star-rating d-flex align-items-center" role="img" aria-label="Rated 4.00 out of 5">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="count-rating d-flex align-items-center ps-1">
+                                            1
+                                        </div>
+                                    </div>
+                                   
+                                    <span class="price">
+                                        <del>$79.99</del>
+                                        <ins>$49.99</ins>
+                                    </span> 
+                                    <div class="category2-fade-block">
+                                        <div class="category2-button-group cart-with-quantity ">
+                                            
+                                                <button type="button" class="category2-button col-lg-12 col-md-8">Add to cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content-fade border-info" style="margin-bottom: -49px;">
+                            </div>
+                        </div>
+                        <div class="category2-product category col-lg-3_3 col-md-6 col-sm-12 category-first d-flex justify-content-between align-items-center category-border">
+                            <div class="product-wrapper product-type-1">
+                                <div class="thumbnail-wrapper">
+                                    <div class="product-badges">
+                                        <span class="badge  onsale col-lg-12">31%</span>
+                                    </div>
+                                            <a href="https://klbtheme.com/bacola/product/tropicana-pineapple-mango-drink/"><img style="width: 100%;" class="h-auto"
+                                                    decoding="async"
+                                                    src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-9-346x310.jpg"
+                                                    alt="Tropicana Pineapple Mango Drink">
+                                            </a>
+                                    <div class="product-buttons">
+                                        <div class="screen-size-max p-2">
+                                            <a href="430" class="detail-bnt quick-view-button">
+                                                <svg class="svg col-lg-1 "
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path class="path"
+                                                        d="M128 32V0H16C7.163 0 0 7.163 0 16v112h32V54.56L180.64 203.2l22.56-22.56L54.56 32H128zM496 0H384v32h73.44L308.8 180.64l22.56 22.56L480 54.56V128h32V16c0-8.837-7.163-16-16-16zM480 457.44L331.36 308.8l-22.56 22.56L457.44 480H384v32h112c8.837 0 16-7.163 16-16V384h-32v73.44zM180.64 308.64L32 457.44V384H0v112c0 8.837 7.163 16 16 16h112v-32H54.56L203.2 331.36l-22.56-22.72z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="heart-button p-2">
+                                            <a href="">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper">
+                                    <h3 class="product-title"><a
+                                        href="https://klbtheme.com/bacola/product/tropicana-pineapple-mango-drink/"
+                                        title="Tropicana Pineapple Mango Drink">Tropicana Pineapple
+                                        Mango Drink</a>
+                                    </h3>
+                                    <div class="product-meta">
+                                        <div class="product-available in-stock">In Stock</div>
+                                    </div>
+                                    <div class="product-rating d-flex align-items-center">
+                                        <div class="star-rating d-flex align-items-center" role="img" aria-label="Rated 4.00 out of 5">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="count-rating d-flex align-items-center ps-1">
+                                            1
+                                        </div>
+                                    </div>
+                                   
+                                    <span class="price">
+                                        <del>$3.29</del>
+                                        <ins>$2.99</ins>
+                                    </span> 
+                                    <div class="category2-fade-block">
+                                        <div class="category2-button-group cart-with-quantity ">
+                                            
+                                                <button type="button" class="category2-button col-lg-12 col-md-8">Add to cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content-fade border-info" style="margin-bottom: -49px;">
+                            </div>
+                        </div>
+                        <div class="category2-product category col-lg-3_3 col-md-6 col-sm-12 category-first d-flex justify-content-between align-items-center category-border">
+                            <div class="product-wrapper product-type-1">
+                                <div class="thumbnail-wrapper">
+                                    <div class="product-badges">
+                                        <span class="badge  onsale col-lg-12">15%</span>
+                                    </div>
+                                  
+                                            <a href="https://klbtheme.com/bacola/product/organic-sweet-lime/"><img style="width: 100%;" class="h-auto"
+                                                    decoding="async"
+                                                    src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-11-346x310.jpg"
+                                                    alt="Organic Sweet Lime"></a>
+                                    <div class="product-buttons">
+                                        <div class="screen-size-max p-2">
+                                            <a href="430" class="detail-bnt quick-view-button">
+                                                <svg class="svg col-lg-1 "
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path class="path"
+                                                        d="M128 32V0H16C7.163 0 0 7.163 0 16v112h32V54.56L180.64 203.2l22.56-22.56L54.56 32H128zM496 0H384v32h73.44L308.8 180.64l22.56 22.56L480 54.56V128h32V16c0-8.837-7.163-16-16-16zM480 457.44L331.36 308.8l-22.56 22.56L457.44 480H384v32h112c8.837 0 16-7.163 16-16V384h-32v73.44zM180.64 308.64L32 457.44V384H0v112c0 8.837 7.163 16 16 16h112v-32H54.56L203.2 331.36l-22.56-22.72z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="heart-button p-2">
+                                            <a href="">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper">
+                                    <h3 class="product-title"><a
+                                        href="https://klbtheme.com/bacola/product/organic-sweet-lime/"
+                                        title="Organic Sweet Lime">Organic Sweet Lime</a>
+                                    </h3>
+                                    <div class="product-meta">
+                                        <div class="product-available in-stock">In Stock</div>
+                                    </div>
+                                    <div class="product-rating d-flex align-items-center">
+                                        <div class="star-rating d-flex align-items-center" role="img" aria-label="Rated 4.00 out of 5">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="count-rating d-flex align-items-center ps-1">
+                                            1
+                                        </div>
+                                    </div>
+                                   
+                                    <span class="price">
+                                        <del>$6.99</del>
+                                        <ins>$5.99</ins>
+                                    </span> 
+                                    <div class="category2-fade-block">
+                                        <div class="category2-button-group cart-with-quantity ">
+                                            
+                                                <button type="button" class="category2-button col-lg-12 col-md-8">Add to cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content-fade border-info" style="margin-bottom: -49px;">
+                            </div>
+                        </div>
+                        <div class="category2-product category col-lg-3_3 col-md-6 col-sm-12 category-first d-flex justify-content-between align-items-center category-border">
+                            <div class="product-wrapper product-type-1">
+                                <div class="thumbnail-wrapper">
+                                    <div class="product-badges">
+                                        <span class="badge  onsale col-lg-12">25%</span>
+                                    </div>
+                                  
+                                            <a href="https://klbtheme.com/bacola/product/fresh-organic-strawberry/"><img style="width: 100%;" class="h-auto"
+                                                    decoding="async"
+                                                    src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-12-346x310.jpg"
+                                                    alt="Fresh Organic Strawberry"></a>
+                                    <div class="product-buttons">
+                                        <div class="screen-size-max p-2">
+                                            <a href="430" class="detail-bnt quick-view-button">
+                                                <svg class="svg col-lg-1 "
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path class="path"
+                                                        d="M128 32V0H16C7.163 0 0 7.163 0 16v112h32V54.56L180.64 203.2l22.56-22.56L54.56 32H128zM496 0H384v32h73.44L308.8 180.64l22.56 22.56L480 54.56V128h32V16c0-8.837-7.163-16-16-16zM480 457.44L331.36 308.8l-22.56 22.56L457.44 480H384v32h112c8.837 0 16-7.163 16-16V384h-32v73.44zM180.64 308.64L32 457.44V384H0v112c0 8.837 7.163 16 16 16h112v-32H54.56L203.2 331.36l-22.56-22.72z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="heart-button p-2">
+                                            <a href="">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper">
+                                    <h3 class="product-title"><a
+                                        href="https://klbtheme.com/bacola/product/fresh-organic-strawberry/"
+                                        title="Fresh Organic Strawberry">Fresh Organic
+                                        Strawberry</a>
+                                    </h3>
+                                    <div class="product-meta">
+                                        <div class="product-available in-stock">In Stock</div>
+                                    </div>
+                                    <div class="product-rating d-flex align-items-center">
+                                        <div class="star-rating d-flex align-items-center" role="img" aria-label="Rated 4.00 out of 5">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="count-rating d-flex align-items-center ps-1">
+                                            1
+                                        </div>
+                                    </div>
+                                   
+                                    <span class="price">
+                                        <del>$12.00</del>
+                                        <ins>$9.00</ins>
+                                    </span> 
+                                    <div class="category2-fade-block">
+                                        <div class="category2-button-group cart-with-quantity ">
+                                            
+                                                <button type="button" class="category2-button col-lg-12 col-md-8">Add to cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content-fade border-info" style="margin-bottom: -49px;">
+                            </div>
+                        </div>
+                        <div class="category2-product category col-lg-3_3 col-md-6 col-sm-12 category-first d-flex justify-content-between align-items-center category-border">
+                            <div class="product-wrapper product-type-1">
+                                <div class="thumbnail-wrapper">
+                                    <div class="product-badges">
+                                        <span class="badge  onsale col-lg-12">21%</span>
+                                    </div>
+                                            <a href="https://klbtheme.com/bacola/product/sol-ti-coconut-charcoal-superade/"><img style="width: 100%;" class="h-auto"
+                                                    decoding="async"
+                                                    src="https://k4j3j2s7.rocketcdn.me/bacola/wp-content/uploads/2021/04/product-image-14-346x310.jpg"
+                                                    alt="Sol-ti Coconut Charcoal SuperAde"></a>
+                                    <div class="product-buttons">
+                                        <div class="screen-size-max p-2">
+                                            <a href="430" class="detail-bnt quick-view-button">
+                                                <svg class="svg col-lg-1 "
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <path class="path"
+                                                        d="M128 32V0H16C7.163 0 0 7.163 0 16v112h32V54.56L180.64 203.2l22.56-22.56L54.56 32H128zM496 0H384v32h73.44L308.8 180.64l22.56 22.56L480 54.56V128h32V16c0-8.837-7.163-16-16-16zM480 457.44L331.36 308.8l-22.56 22.56L457.44 480H384v32h112c8.837 0 16-7.163 16-16V384h-32v73.44zM180.64 308.64L32 457.44V384H0v112c0 8.837 7.163 16 16 16h112v-32H54.56L203.2 331.36l-22.56-22.72z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="heart-button p-2">
+                                            <a href="">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper">
+                                    <h3 class="product-title"><a
+                                        href="https://klbtheme.com/bacola/product/sol-ti-coconut-charcoal-superade/"
+                                        title="Sol-ti Coconut Charcoal SuperAde">Sol-ti Coconut
+                                        Charcoal SuperAde</a>
+                                    </h3>
+                                    <div class="product-meta">
+                                        <div class="product-available in-stock">In Stock</div>
+                                    </div>
+                                    <div class="product-rating d-flex align-items-center">
+                                        <div class="star-rating d-flex align-items-center" role="img" aria-label="Rated 4.00 out of 5">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="count-rating d-flex align-items-center ps-1">
+                                            1
+                                        </div>
+                                    </div>
+                                   
+                                    <span class="price">
+                                        <del>$4.07</del>
+                                        <ins>$3.97</ins>
+                                    </span> 
+                                    <div class="category2-fade-block">
+                                        <div class="category2-button-group cart-with-quantity ">
+                                            
+                                                <button type="button" class="category2-button col-lg-12 col-md-8">Add to cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-content-fade border-info" style="margin-bottom: -49px;">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    
+
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+
     <script src="./script/home.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+    <script src="./script/category4.js"></script>
+
+    
 
 </html>
 
