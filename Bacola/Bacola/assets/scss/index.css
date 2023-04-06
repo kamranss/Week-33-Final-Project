@@ -1694,4 +1694,50 @@ body {
   color: white;
   font-weight: 600;
   margin-left: 1%;
+}
+
+.footer-first {
+  background-color: rgb(17, 57, 177);
+  width: 100%;
+}
+.footer-first .left-content .entry-subtitle {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.footer-first .left-content .entry-title {
+  color: white;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.footer-first .left-content .entry-way {
+  color: rgb(228, 214, 214);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.footer-first .left-content .form-wrapper .sbs-form-1 .sbs-form-fields .subscribe-inputt {
+  width: 60px;
+}
+.footer-first .left-content .form-wrapper .sbs-form-1 .sbs-form-fields .submit {
+  width: 50px;
+}
+.footer-widgets .widget .widget_nav_menu .menu-container .menu {
+  list-style: none;
+}
+.footer-widgets .widget .widget_nav_menu .menu-container .menu .menu-item a {
+  text-decoration: none;
+  color: rgb(169, 163, 163);
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-Width: 760px) {
+  .widget-balance {
+    margin-top: -2%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .footer-widgets {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=index.css.map */
