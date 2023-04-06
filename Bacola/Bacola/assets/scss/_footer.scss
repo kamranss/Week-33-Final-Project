@@ -44,12 +44,16 @@
 .footer-widgets{
     .widget{
         .widget_nav_menu{
+           
             .widget-title{
-
+                font-size: 1rem;
+                font-weight: 500;
+                font-family: sans-serif;
             }
             .menu-container{
                 .menu{
                     list-style: none;
+                    margin-left: -14%;
                     .menu-item{
                         a{
                             text-decoration: none;
@@ -67,6 +71,9 @@
 
     .widget-balance {
         margin-top: -2%;
+    }
+    .widget-balance-1 {
+        margin-top: -4%;
     }
    
 }

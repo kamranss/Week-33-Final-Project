@@ -1,0 +1,197 @@
+.h-m{
+    ul{
+        list-style: none;
+        
+        .home{
+           
+            a{
+                text-decoration: none;
+                font-size: 0.8rem;
+                color: black;
+                font-weight: 800 !important;
+            }
+        }
+        .fa-solid{
+            font-size: 0.8rem;
+            color: grey;
+            font-weight: 700;
+        }
+        .cart{
+           
+            font-size: 0.8rem;
+            color: grey;
+            font-weight: 700;
+        }
+    }
+}
+
+
+.cart-empty-page{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    .empty-icon{
+        margin-left: 43%;
+        width: 12%;
+        height: 140px;
+        border-radius: 50%;
+        background-color: aliceblue;
+        margin-bottom: 2%;
+        svg{
+            width: 100%;
+            margin-top: 34%;
+        }
+        
+    }
+    .woocommerce-notices-wrapper{
+
+    }
+    .cart-emptyyy{
+        color: red;
+        font-weight: 900 !important;
+        font-size: 1.2rem;
+    }
+    .return-to-shop{
+        .button-primaryy{
+            background-color: rgb(6, 6, 132);
+            height: 3rem;
+            border-radius: 1.4rem;
+            text-decoration: none;
+            color: white;
+            font-weight: 600
+        }
+    }
+}
+// @media only screen and (min-width:1100px) {
+//     .empty-icon{
+//         width: 2%;
+        
+//     }
+// }
+
+// @media only screen and (min-width:760px) {
+//     .empty-icon{
+//         width: 15%;
+//         margin-left: -10%;
+//     }
+// }
+// @media only screen and (max-width:300px) {
+//     .empty-icon{
+//         width: 30%;
+//         margin-left: 10%;
+//     }
+// }
+
+
+
+.baskey-emptyy{
+    display: none;
+}
+
+.fa-circle-plus, .fa-circle-minus{
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.5s;
+    color: grey;
+    font-size: 1.4rem;
+  }
+  
+   .fa-circle-minus:hover{
+    transform: scale(1.5);
+    color: rgb(82, 93, 90);
+  }
+  .fa-circle-plus:hover{
+   transform: scale(1.5);
+   color: rgb(82, 93, 90);
+  }
+  #Icon-delete{
+    transition: 0.5s
+  }
+  #Icon-delete:hover{
+    transform: scale(2);
+    color: rgb(82, 93, 90);
+  }
+  
+  .total-price{
+    position: fixed;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    width: 130px;
+    height: 50px;
+    width: 100px;
+    top: 650px;
+    left: 1386px;
+    transition: 0.8s;
+  }
+  
+  .total-price:hover{
+    transform: scale(1.5);
+  }
+  
+  
+  .basket-container{
+    border: 10px solid grey;
+    position: relative;
+    font-family: sans-serif;
+    .total-pricee{
+        border: 3px solid grey;
+        position: absolute;
+        top: 0%;
+        left: 120%;
+        .title{
+            border-bottom: 1px solid rgb(185, 175, 175);
+            margin-bottom: 1rem;
+            h4{
+                font-weight: 700;
+                font-size: 1.2rem;
+
+            }
+        }
+        .subtotal{
+            border-bottom: 1px solid rgb(185, 175, 175);
+            .content{
+                font-size: 1rem;
+                font-weight: 600;
+                font-family: sans-serif;
+            }
+            .price-first{
+
+            }
+        }
+        .shipping{
+            border-bottom: 1px solid rgb(185, 175, 175);
+            p{
+
+            }
+            form{
+                ul{
+                    list-style: none;
+                    li{
+                        input{
+
+                        }
+                    }
+                    .none-click{
+                        p{
+                            font-weight: 400;
+                            span{
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+                .change-address{
+                    margin-left: 30%;
+                    a{
+                        text-decoration: none;
+                        font-size: 0.9rem;
+                        font-weight: 500;
+                        color: rgb(13, 116, 160);
+                    }
+                }
+            }
+        }
+    }
+  }
