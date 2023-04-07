@@ -442,7 +442,7 @@ body {
   border-bottom: 1px solid #e3e4e6;
 }
 .header .container .row .bottom-header-nav .categories {
-  padding-top: 1.6rem;
+  margin-left: 4%;
 }
 .header .container .row .bottom-header-nav .categories a {
   display: flex;
@@ -1766,7 +1766,6 @@ body {
   animation-duration: 1.5s;
   /* transition-duration: 5s; */
   animation-name: test;
-  background-color: rgb(146, 15, 15);
 }
 
 .image-size {
@@ -1858,6 +1857,10 @@ body {
   font-weight: 600;
 }
 
+.table-display-none {
+  display: none;
+}
+
 .baskey-emptyy {
   display: none;
 }
@@ -1869,6 +1872,10 @@ body {
   transition: 0.5s;
   color: grey;
   font-size: 1.4rem;
+}
+
+.product-name {
+  font-size: 0.8rem;
 }
 
 .fa-circle-minus:hover {
@@ -1901,6 +1908,7 @@ body {
   top: 650px;
   left: 1386px;
   transition: 0.8s;
+  display: none;
 }
 
 .total-price:hover {
@@ -1911,9 +1919,12 @@ body {
   border: 10px solid grey;
   position: relative;
   font-family: sans-serif;
+  border-radius: 10px;
 }
 .basket-container .total-pricee {
-  border: 3px solid grey;
+  padding: 3%;
+  border: 1px solid rgb(202, 192, 192);
+  border-radius: 10px;
   position: absolute;
   top: 0%;
   left: 120%;
@@ -1938,7 +1949,15 @@ body {
   border-bottom: 1px solid rgb(185, 175, 175);
 }
 .basket-container .total-pricee .shipping form ul {
+  direction: rtl;
   list-style: none;
+}
+.basket-container .total-pricee .shipping form ul li {
+  font-size: 0.8rem;
+}
+.basket-container .total-pricee .shipping form ul li label .shipment-fee {
+  color: red;
+  font-size: 1rem;
 }
 .basket-container .total-pricee .shipping form ul .none-click p {
   font-weight: 400;
@@ -1946,12 +1965,24 @@ body {
 .basket-container .total-pricee .shipping form ul .none-click p span {
   font-weight: 600;
 }
-.basket-container .total-pricee .shipping form .change-address {
-  margin-left: 30%;
-}
 .basket-container .total-pricee .shipping form .change-address a {
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
   color: rgb(13, 116, 160);
+}
+.basket-container .total-pricee .shipping form .submit {
+  background-color: rgb(182, 40, 40);
+  color: white;
+  border-radius: 5px;
+  padding: 15px 50px;
+  position: absolute;
+  margin-top: 25%;
+  margin-left: -30%;
+}
+.basket-container .total-pricee .total-value {
+  border-bottom: 1px solid rgb(185, 175, 175);
+}
+.basket-container .total-pricee .total-value .total_p {
+  font-weight: 700;
 }/*# sourceMappingURL=index.css.map */

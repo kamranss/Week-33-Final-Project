@@ -313,30 +313,39 @@
     <div class="container">
         <div class="row">
               <div class="basket-container d-flex justify-content-between align-items-center col-lg-8 ">
-                <table class="table mt-5 col-lg-8 col-md-8 col-sm-8">
-                    <thead id="tableHead">
-                      <!-- <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Image</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Quantity</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Delete</th>
-                      </tr> -->
-                    </thead>
-                    <tbody id="tableBody">
-                      <!-- <tr>
-                        <th scope="row">1</th>
-                        <td><img src="./image/" alt=""></td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td class="d-flex justify-content-center align-items-center" style="cursor: pointer;"><i class="fa-solid fa-trash"></i></td>
-                      </tr>
-                       -->
-                    </tbody>
+               <div class="table-box mt-5 col-lg-12 col-md-8 col-sm-8">
+                <table class="table col-lg-12 ">
+                  <thead id="tableHead">
+                    <!-- <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Image</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Delete</th>
+                    </tr> -->
+                  </thead>
+                  <tbody id="tableBody">
+                    <!-- <tr>
+                      <th scope="row">1</th>
+                      <td><img src="./image/" alt=""></td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                      <td>@mdo</td>
+                      <td class="d-flex justify-content-center align-items-center" style="cursor: pointer;"><i class="fa-solid fa-trash"></i></td>
+                    </tr>
+                     -->
+                  </tbody>
                 </table>
-                <div class="total-pricee col-lg-3">
+                <div class="remove-all d-flex align-items-center justify-content-between">
+                  <form action="">
+                    <input type="text">
+                    <input type="submit" value="Apply cupon">
+                  </form>
+                  <input type="submit" value="Remove All">
+                </div>
+               </div>
+                <div class="total-pricee col-lg-5">
                     <div class="title">
                         <h4>Cart Totals</h4>
                     </div>
@@ -344,34 +353,35 @@
                         <p class="content">Subtotal</p>
                         <p class="price-first">10$</p>
                     </div>
-                    <div class="shipping d-flex align-items-center">
+                    <div class="shipping d-flex align-items-center justify-content-between">
                         <p>Shipping</p>
                         <form action="">
-                            <ul>
-                                <li>
-                                    <input type="radio" id="age1" name="age" value="30">
-                                    <label for="age1">Free shipping</label><br>
-                                </li>
-                                <li>
-                                    <input type="radio" id="age2" name="age" value="60">
-                                    <label for="age2">Local pickup</label><br>
-                                </li>
-                                <li class="none-click">
-                                    <p>shipping to <span>All.</span></p>
-                                </li>
-                            </ul>
-                
-                            <p class="change-address"><a href="">Change address</a></p>
-                
-                
-                            <input type="submit" value="Proceed to Checkout">
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="age1" name="age" value="30">
+                                        <label for="age1">Flat Rate <span class="shipment-fee">$ 5.00</span></label><br>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="age2" name="age" value="60">
+                                        <label for="age2">Local pickup</label><br>
+                                    </li>
+                                    <li class="none-click">
+                                        <p>.shipping to <span>All</span></p>
+                                    </li>
+                                </ul>
+                                <p class="change-address d-flex justify-content-end"><a href="">Change address</a></p>
+                                <input class="submit" type="submit" value="Proceed to Checkout">
                 
                         </form>
                     </div>
                     <div class="total-value d-flex align-items-center justify-content-between">
-                        <p>Total</p>
-                        <p>290.59$</p>
+                        <p class="total">Total</p>
+                        <div class="d-flex align-items-center justify-content-end gap-1">
+                          <p class="total_p"></p>
+                          <!-- <p>$</p> -->
+                        </div>
                     </div>
+                    <br><br><br>
                 </div>
                 
             </div>
@@ -400,7 +410,7 @@ crossorigin="anonymous"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<!-- <script src="./script/basketHomePage.js"></script> -->
+<script src="./script/basketHomePage.js"></script>
 <script src="./script/basketPage.js"></script>
 
 </html>
