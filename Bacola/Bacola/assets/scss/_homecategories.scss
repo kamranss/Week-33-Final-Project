@@ -1060,10 +1060,10 @@
                 }
             }
             .buttonnn{
-                border-radius: 10px;
+                border-radius: 15px;
                 margin-top: 16%;
                 background-color: grey;
-                padding: 10px 3px;
+                padding: 10px 10px;
                 text-decoration: none;
                 color: white;
                 font-size: 0.8rem;
@@ -1129,6 +1129,8 @@
                     }
             }
             .entry-meta{
+                font-weight: 800;
+                font-family: sans-serif;
                 .entry-published{
                     
                     a{
@@ -1151,6 +1153,7 @@
                     .meta-separator{
                         font-style: italic;
                         color: rgb(129, 119, 119);
+                        font-weight: 400;
                     }
                     a{
                         text-decoration: none !important;

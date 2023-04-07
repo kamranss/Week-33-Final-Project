@@ -1,5 +1,32 @@
 // let buttons = document.querySelectorAll(".btn-primary");
 
+let localPickup = document.querySelectorAll(".local-pickup");
+
+// if (localPickup.checked) {
+//     let totalP = document.querySelector(".total_p");
+//     let flatRate = document.querySelector(".flat-rate");
+
+//  }
+
+let numbers = document.querySelectorAll("#number");
+if (JSON.parse(localStorage.getItem("basket")) == null || JSON.parse(localStorage.getItem("basket")).length <=0) {
+        let tableBox = document.querySelector(".table-box");
+        let totalPrice = document.querySelector(".total-pricee");
+        let basketEmpty = document.querySelector("#basket-empty")
+
+        tableBox.classList.add("table-display-none");
+        totalPrice.classList.add("table-display-none");
+        basketEmpty.classList.remove("table-display-none")
+        console.log(numbers);       
+}else{
+    let tableBox = document.querySelector(".table-box");
+    let totalPrice = document.querySelector(".total-pricee");
+    let basketEmpty = document.querySelector("#basket-empty")
+
+    tableBox.classList.remove("table-display-none");
+    totalPrice.classList.remove("table-display-none");
+    basketEmpty.classList.add("table-display-none")
+}
 
 if (localStorage.getItem("basket") != null) {
     
@@ -22,9 +49,7 @@ if (localStorage.getItem("basket") != null) {
                 `
 
 
-                let basketEmpty = document.querySelector("#basket-empty")
-
-                basketEmpty.classList.add("baskey-emptyy")
+               
                 tableHead.append(headTr);
                 let table = document.querySelector(".table");
                 // let totalPrice =0
@@ -38,9 +63,20 @@ if (localStorage.getItem("basket") != null) {
                 span.classList.add("total-price")
                 span.innerHTML = `<span class="d-flex justify-content-center">Total Price</span><span class="d-flex justify-content-center span-price"> ${totalPrice} $<br></span>`
                 table.append(span)
-                let pTotalPrice = document.querySelector(".total_p")
-                pTotalPrice.innerText = `${totalPrice} $`
-                
+
+              
+
+                window.onload = function() {
+                  
+
+                    document.querySelector(".flat-rate").click();
+
+                    let pTotalPrice = document.querySelector(".total_p")
+                    pTotalPrice.innerText = `${totalPrice + 5.00} $`
+                  };
+               
+                let priceFrist = document.querySelector(".price-first");
+                priceFrist.innerText = `${totalPrice}$`
 
             }
             
@@ -53,7 +89,7 @@ if (localStorage.getItem("basket") != null) {
                 <td class = "product-name" id = "productName">${product.productName}</td>
                 <td>${product.price}</td>
                 <td><i id = "decrement" class="fa-solid fa-circle-minus"></i> <span id = "count">${product.count}</span> <i id = "increment" class="fa-solid fa-circle-plus" ></i></td>
-                <td class = "subtotal-price-incDec">${parseFloat(product.price.replace(/[^\d.]/g, '')) * product.count}$</td>
+                <td class = "subtotal-price-incDec">$${parseFloat(product.price.replace(/[^\d.]/g, '')) * product.count}</td>
                 <td><i id = "Icon-delete"class="fa-solid fa-xmark" style="cursor: pointer;"></i></td>
             </tr>
           `
@@ -68,8 +104,7 @@ if (localStorage.getItem("basket") != null) {
     incrementIcon();
     
 }else{
-    let tableBox = document.querySelector(".table-box")
-    tableBox.classList.add("table-display-none");
+   
 }
 
 
@@ -146,6 +181,14 @@ function DeleteFilesUsingIcon(){
                                 let table = document.querySelector(".table-box");
                                 console.log(table);
                                 table.classList.add("table-display-none");
+
+                                totalPrice = document.querySelector(".total-pricee");
+                                totalPrice.classList.add("table-display-none");
+                                console.log(totalPrice);
+
+                                let basketEmpty = document.querySelector("#basket-empty")
+                                basketEmpty.classList.remove("table-display-none")
+                                let cartEmpty = document.querySelector(".")
 
                                 // tHeadChildTrParent = tHeadChildTr.parentNode; // issue
                                 tableHeadChildTr.parentNode.removeChild(tableHeadChildTr)
@@ -242,7 +285,7 @@ function incrementIcon (){
                 // parseFloat((parseFloat(newArr.price .replace(/[^\d.]/g, ''))).toFixed(1))
                 let subTotal1 = parseFloat(newArr.price .replace(/[^\d.]/g, '')) * newArr.count
                 let subTotal2 =  parseFloat((Math.round(subTotal1 * 100) /100).toFixed(2));
-                subtotalPrice.innerText = `${subTotal2} $`;
+                subtotalPrice.innerText = `$${subTotal2}`;
             }  
 
         } )
@@ -260,16 +303,32 @@ function totalPriceCalculator(productList){
         let totalPrice2 =  parseFloat((Math.round(totalPrice1 * 100) /100).toFixed(2));
         // totalPriceMain += Math.floor((parseFloat(p.price.replace(/[^\d.]/g, '')) * p.count) *100) / 100;
         totalPriceMain += totalPrice2;
+
+        
     })
+
+    // let flatRate = document.querySelector(".flat-rate");
+    //     if (flatRate.checked) {
+    //     totalPriceMain +=parseFloat((flatRate.nextElementSibling.firstElementChild.innerText).replace(/[^\d.]/g, ''));
+    //     } else {
+         
+    //     }
+
     return totalPriceMain;
 }
 
 function totalPriceduringIncrementandDecrement(productList){
-    let spanPrice = document.querySelector(".span-price");
+    let flatRate = document.querySelector(".flat-rate");
+    let priceFrist = document.querySelector(".price-first");
     let pTotalPrice = document.querySelector(".total_p")
+    let spanPrice = document.querySelector(".span-price");
     let totalPrice = totalPriceCalculator(productList)
+    // priceFrist.innerText = `${totalPrice}$`
     spanPrice.innerText = `${totalPrice} $`
-    pTotalPrice.innerText = `${totalPrice} $`
+    pTotalPrice.innerText  = `${totalPrice} $`
+
+    priceFrist.innerText = `${totalPrice- parseFloat((flatRate.nextElementSibling.firstElementChild.innerText).replace(/[^\d.]/g, ''))} $`
+
 }
 
 
@@ -279,3 +338,5 @@ function basketCountCalculator(){
         basketCount.innerText = arr.length;
     }
 }
+
+

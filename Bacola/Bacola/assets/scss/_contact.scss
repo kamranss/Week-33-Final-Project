@@ -1,0 +1,188 @@
+
+
+// first part
+.elementor-section1{
+    margin-top: 4%;
+    .container{
+        .row{
+            .elementor-widget-container{
+                h1{
+                    font-size: 2.4rem;
+                    font-weight: 500;
+                    color: rgb(21, 20, 20);
+                    opacity: 0.94;
+                    font-family: sans-serif;
+                }
+            }
+            .elementor-widget-container2{
+                p{
+                    font-weight: 500;
+                    font-size: 1rem;
+                    font-family: sans-serif;
+                }
+            }
+        }
+    }
+}
+
+// second part
+
+
+.elementor-section2{
+    margin-top: 3%;
+    .container{
+        .row{
+            .section1{
+                .icon-box{
+                    padding: 2.2rem 3.6rem;
+                    background-color: rgb(237, 243, 246);
+                    border-radius: 10px;
+                    i{
+                        font-size: 3rem;
+                        color: rgb(13, 49, 157);
+                    }
+                    h5{
+                        opacity: 0.9;
+                        font-size: 1rem;
+                        margin-top: 10%;
+                        font-weight: 700;
+                        font-family: sans-serif;
+                    }
+                    p{
+                        font-size: 0.8rem;
+                        margin-top: 5%;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// third part
+
+
+
+.elementor-section3{
+    margin-top: 3%;
+    
+    .container{
+        .row{
+            .form-contact{
+                border-radius: 19px;
+                box-shadow: 0px 1px 4px -1px rgba(104,97,97,0.61);
+                -webkit-box-shadow: 0px 1px 4px -1px rgba(104,97,97,0.61);
+                -moz-box-shadow: 0px 1px 4px -1px rgba(104,97,97,0.61);
+                .contact-header{
+                    margin-top: 10%;
+                    .contact-header-smallbox{
+                        h2{
+                            font-size: 2.4rem;
+                            font-weight: 500;
+                            color: rgb(21, 20, 20);
+                            opacity: 0.94;
+                            font-family: sans-serif;
+                        }
+                        p{
+                            font-weight: 500;
+                            font-size: 1rem;
+                            font-family: sans-serif;
+                        }
+                        .lineee{
+                            margin-top: 10%;
+                            border-bottom: 0.5px solid rgb(231, 229, 229);
+                        }
+                    }
+                }
+                .form-box{
+                    margin-top: 4%;
+                    .email-name{
+                        .name{
+                            
+                            p{
+                                
+                                label{
+
+                                }
+                                span{
+                                    input{
+                                        border-style: none;
+                                        border-radius: 5px;
+                                        padding: 0.8rem 4rem;
+                                        background-color: rgb(237, 243, 246);
+                                        font-size: 0.8rem;
+                                    }
+                                }
+                            }
+                        }
+                        .email{
+                            label{
+
+                            }
+                            span{
+                                input{
+                                    border-style: none;
+                                    border-radius: 5px;
+                                    padding: 0.8rem 4rem;
+                                    background-color: rgb(237, 243, 246);
+                                    font-size: 0.8rem;
+                                }
+                            }
+                        }
+                    }
+                    .subject{
+                        p{
+                            label{
+
+                            }
+                            span{
+                                input{
+                                    border-style: none;
+                                    border-radius: 5px;
+                                    padding: 0.8rem 33.6%;
+                                    background-color: rgb(237, 243, 246);
+                                    font-size: 0.8rem; 
+                                }
+                            }
+                        }
+                    }
+                    .message{
+                        p{
+                            label{
+
+                            }
+                            span{
+                                textarea{
+                                    border-style: none;
+                                    border-radius: 5px;
+                                    padding: 0.8rem 34.7%;
+                                    background-color: rgb(237, 243, 246);
+                                    font-size: 0.8rem;
+                                }
+                            }
+                        }
+                    }
+                    .submit{
+                        p{
+                            input{
+                                padding: 1rem 2rem;
+                                border-style: none;
+                                border-radius: 5px;
+                                font-weight: 600;
+                                opacity: 0.88;
+                                font-family: sans-serif;
+                                font-size: 0.8rem;
+                                color: white;
+                                background-color: rgb(11, 11, 133);
+                            }
+                            span{
+
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

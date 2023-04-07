@@ -92,66 +92,21 @@
     display: none;
 }
 
-.fa-circle-plus, .fa-circle-minus{
-    cursor: pointer;
-    margin-left: 10px;
-    margin-right: 10px;
-    transition: 0.5s;
-    color: grey;
-    font-size: 1.4rem;
-  }
 
-  .product-name{
-    font-size: 0.8rem;
-  }
-  
-   .fa-circle-minus:hover{
-    transform: scale(1.5);
-    color: rgb(82, 93, 90);
-  }
-  .fa-circle-plus:hover{
-   transform: scale(1.5);
-   color: rgb(82, 93, 90);
-  }
-  #Icon-delete{
-    transition: 0.5s
-  }
-  #Icon-delete:hover{
-    transform: scale(2);
-    color: rgb(82, 93, 90);
-  }
-  
-  .total-price{
-    position: fixed;
-    border-radius: 5px;
-    background-color: red;
-    color: white;
-    width: 130px;
-    height: 50px;
-    width: 100px;
-    top: 650px;
-    left: 1386px;
-    transition: 0.8s;
-    display: none;
-  }
-  
-  .total-price:hover{
-    transform: scale(1.5);
-  }
   
   
   .basket-container{
-    border: 10px solid grey;
+    border: 0.5px solid rgb(222, 213, 213);
     position: relative;
     font-family: sans-serif;
     border-radius: 10px;
     .total-pricee{
         padding: 3%;
-        border: 1px solid rgb(202, 192, 192);
+        border: 0.5px solid rgb(226, 214, 214);
         border-radius: 10px;
         position: absolute;
         top: 0%;
-        left: 120%;
+        left: 106%;
         .title{
             border-bottom: 1px solid rgb(185, 175, 175);
             margin-bottom: 1rem;
@@ -164,7 +119,7 @@
         .subtotal{
             border-bottom: 1px solid rgb(185, 175, 175);
             .content{
-                font-size: 1rem;
+                font-size: 0.8rem;
                 font-weight: 600;
                 font-family: sans-serif;
             }
@@ -175,7 +130,9 @@
         .shipping{
             border-bottom: 1px solid rgb(185, 175, 175);
             p{
-
+                font-size: 0.8rem;
+                font-weight: 600;
+                font-family: sans-serif;
             }
             form{
                 ul{ 
@@ -216,21 +173,155 @@
                     background-color: rgb(182, 40, 40);
                     color: white;
                     border-radius: 5px;
-                    padding: 15px 50px;
+                    padding: 12px 50px;
                     position: absolute;
-                    margin-top: 25%;
-                    margin-left: -30%;
+                    margin-top: 20%;
+                    margin-left: -37%;
+                    border-style: none;
                 }
             }
         }
         .total-value{
             border-bottom: 1px solid rgb(185, 175, 175);
             .total{
-
+                font-size: 0.8rem;
+                font-weight: 600;
+                font-family: sans-serif;
             }
             .total_p{
                  font-weight: 700;
             }
         }
     }
+  }
+
+
+
+
+
+
+  .table-box{
+    .product-count{
+        margin-bottom: 2rem;
+        border: 1px solid rgb(235, 231, 231);
+        padding: 0.4rem;
+        border-radius: 10px;
+        .product-pcs{
+            p{
+                span{
+                    color: red;
+                    font-weight: 700;
+                }
+            }
+        }
+        .product-progress{
+            span{
+
+            }
+        }
+    }
+    .tablee{
+        #tableHead{
+
+        }
+        #tableBody{
+
+        }
+    }
+    .remove-all{
+        padding: 1%;
+        form{
+            .text{
+                // border-color: 0.1px solid transparent rgb(229, 210, 210);
+                border-style: none;
+                border-radius: 5px;
+                padding: 0.8rem 1.3rem;
+                background-color: rgb(247, 245, 245);
+                font-size: 0.8rem;
+                // border-color: rgb(219, 206, 206);
+            }
+            .submit{
+                padding: 1rem 0.8rem;
+                border-style: none;
+                border-radius: 5px;
+                font-weight: 600;
+                font-family: sans-serif;
+                font-size: 0.7rem;
+                color: rgb(240, 232, 232);
+                background-color: rgb(11, 11, 133);
+            }
+        }
+        .submit-removeAll{
+            padding: 1rem 2rem;
+            border-style: none;
+            border-radius: 5px;
+            font-weight: 600;
+            font-family: sans-serif;
+            font-size: 0.7rem;
+            color: rgb(240, 232, 232);
+            background-color: rgb(11, 11, 133);
+        }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .fa-circle-plus, .fa-circle-minus{
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.5s;
+    color: rgb(219, 214, 214);
+    font-size: 1.4rem;
+  }
+
+  .product-name{
+    font-size: 0.8rem;
+  }
+  
+    .fa-circle-minus:hover{
+    transform: scale(1.5);
+    color: rgb(82, 93, 90);
+    }
+  .fa-circle-plus:hover{
+   transform: scale(1.5);
+   color: rgb(82, 93, 90);
+  }
+  #Icon-delete{
+    transition: 0.5s
+  }
+  #Icon-delete:hover{
+    transform: scale(2);
+    color: rgb(82, 93, 90);
+  }
+  
+  .total-price{
+    position: fixed;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    width: 130px;
+    height: 50px;
+    width: 100px;
+    top: 650px;
+    left: 1386px;
+    transition: 0.8s;
+    display: none;
+  }
+  
+  .total-price:hover{
+    transform: scale(1.5);
   }

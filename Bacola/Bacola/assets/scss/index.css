@@ -1545,10 +1545,10 @@ body {
   color: rgb(161, 147, 147);
 }
 .category6-first .banner-wrapper .banner-content .buttonnn {
-  border-radius: 10px;
+  border-radius: 15px;
   margin-top: 16%;
   background-color: grey;
-  padding: 10px 3px;
+  padding: 10px 10px;
   text-decoration: none;
   color: white;
   font-size: 0.8rem;
@@ -1592,6 +1592,10 @@ body {
   font-weight: 600;
   display: flex;
 }
+.category7 .post .post-wrapper .entry-meta {
+  font-weight: 800;
+  font-family: sans-serif;
+}
 .category7 .post .post-wrapper .entry-meta .entry-published a {
   font-size: 0.9rem;
   text-decoration: none;
@@ -1607,6 +1611,7 @@ body {
 .category7 .post .post-wrapper .entry-meta .entry-author .meta-separator {
   font-style: italic;
   color: rgb(129, 119, 119);
+  font-weight: 400;
 }
 .category7 .post .post-wrapper .entry-meta .entry-author a {
   text-decoration: none !important;
@@ -1865,12 +1870,136 @@ body {
   display: none;
 }
 
+.basket-container {
+  border: 0.5px solid rgb(222, 213, 213);
+  position: relative;
+  font-family: sans-serif;
+  border-radius: 10px;
+}
+.basket-container .total-pricee {
+  padding: 3%;
+  border: 0.5px solid rgb(226, 214, 214);
+  border-radius: 10px;
+  position: absolute;
+  top: 0%;
+  left: 106%;
+}
+.basket-container .total-pricee .title {
+  border-bottom: 1px solid rgb(185, 175, 175);
+  margin-bottom: 1rem;
+}
+.basket-container .total-pricee .title h4 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.basket-container .total-pricee .subtotal {
+  border-bottom: 1px solid rgb(185, 175, 175);
+}
+.basket-container .total-pricee .subtotal .content {
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.basket-container .total-pricee .shipping {
+  border-bottom: 1px solid rgb(185, 175, 175);
+}
+.basket-container .total-pricee .shipping p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.basket-container .total-pricee .shipping form ul {
+  direction: rtl;
+  list-style: none;
+}
+.basket-container .total-pricee .shipping form ul li {
+  font-size: 0.8rem;
+}
+.basket-container .total-pricee .shipping form ul li label .shipment-fee {
+  color: red;
+  font-size: 1rem;
+}
+.basket-container .total-pricee .shipping form ul .none-click p {
+  font-weight: 400;
+}
+.basket-container .total-pricee .shipping form ul .none-click p span {
+  font-weight: 600;
+}
+.basket-container .total-pricee .shipping form .change-address a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgb(13, 116, 160);
+}
+.basket-container .total-pricee .shipping form .submit {
+  background-color: rgb(182, 40, 40);
+  color: white;
+  border-radius: 5px;
+  padding: 12px 50px;
+  position: absolute;
+  margin-top: 20%;
+  margin-left: -37%;
+  border-style: none;
+}
+.basket-container .total-pricee .total-value {
+  border-bottom: 1px solid rgb(185, 175, 175);
+}
+.basket-container .total-pricee .total-value .total {
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.basket-container .total-pricee .total-value .total_p {
+  font-weight: 700;
+}
+
+.table-box .product-count {
+  margin-bottom: 2rem;
+  border: 1px solid rgb(235, 231, 231);
+  padding: 0.4rem;
+  border-radius: 10px;
+}
+.table-box .product-count .product-pcs p span {
+  color: red;
+  font-weight: 700;
+}
+.table-box .remove-all {
+  padding: 1%;
+}
+.table-box .remove-all form .text {
+  border-style: none;
+  border-radius: 5px;
+  padding: 0.8rem 1.3rem;
+  background-color: rgb(247, 245, 245);
+  font-size: 0.8rem;
+}
+.table-box .remove-all form .submit {
+  padding: 1rem 0.8rem;
+  border-style: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 0.7rem;
+  color: rgb(240, 232, 232);
+  background-color: rgb(11, 11, 133);
+}
+.table-box .remove-all .submit-removeAll {
+  padding: 1rem 2rem;
+  border-style: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 0.7rem;
+  color: rgb(240, 232, 232);
+  background-color: rgb(11, 11, 133);
+}
+
 .fa-circle-plus, .fa-circle-minus {
   cursor: pointer;
   margin-left: 10px;
   margin-right: 10px;
   transition: 0.5s;
-  color: grey;
+  color: rgb(219, 214, 214);
   font-size: 1.4rem;
 }
 
@@ -1915,74 +2044,114 @@ body {
   transform: scale(1.5);
 }
 
-.basket-container {
-  border: 10px solid grey;
-  position: relative;
+.elementor-section1 {
+  margin-top: 4%;
+}
+.elementor-section1 .container .row .elementor-widget-container h1 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: rgb(21, 20, 20);
+  opacity: 0.94;
   font-family: sans-serif;
-  border-radius: 10px;
 }
-.basket-container .total-pricee {
-  padding: 3%;
-  border: 1px solid rgb(202, 192, 192);
-  border-radius: 10px;
-  position: absolute;
-  top: 0%;
-  left: 120%;
-}
-.basket-container .total-pricee .title {
-  border-bottom: 1px solid rgb(185, 175, 175);
-  margin-bottom: 1rem;
-}
-.basket-container .total-pricee .title h4 {
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-.basket-container .total-pricee .subtotal {
-  border-bottom: 1px solid rgb(185, 175, 175);
-}
-.basket-container .total-pricee .subtotal .content {
+.elementor-section1 .container .row .elementor-widget-container2 p {
+  font-weight: 500;
   font-size: 1rem;
-  font-weight: 600;
   font-family: sans-serif;
 }
-.basket-container .total-pricee .shipping {
-  border-bottom: 1px solid rgb(185, 175, 175);
+
+.elementor-section2 {
+  margin-top: 3%;
 }
-.basket-container .total-pricee .shipping form ul {
-  direction: rtl;
-  list-style: none;
+.elementor-section2 .container .row .section1 .icon-box {
+  padding: 2.2rem 3.6rem;
+  background-color: rgb(237, 243, 246);
+  border-radius: 10px;
 }
-.basket-container .total-pricee .shipping form ul li {
+.elementor-section2 .container .row .section1 .icon-box i {
+  font-size: 3rem;
+  color: rgb(13, 49, 157);
+}
+.elementor-section2 .container .row .section1 .icon-box h5 {
+  opacity: 0.9;
+  font-size: 1rem;
+  margin-top: 10%;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+.elementor-section2 .container .row .section1 .icon-box p {
+  font-size: 0.8rem;
+  margin-top: 5%;
+  font-weight: 600;
+}
+
+.elementor-section3 {
+  margin-top: 3%;
+}
+.elementor-section3 .container .row .form-contact {
+  border-radius: 19px;
+  box-shadow: 0px 1px 4px -1px rgba(104, 97, 97, 0.61);
+  -webkit-box-shadow: 0px 1px 4px -1px rgba(104, 97, 97, 0.61);
+  -moz-box-shadow: 0px 1px 4px -1px rgba(104, 97, 97, 0.61);
+}
+.elementor-section3 .container .row .form-contact .contact-header {
+  margin-top: 10%;
+}
+.elementor-section3 .container .row .form-contact .contact-header .contact-header-smallbox h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: rgb(21, 20, 20);
+  opacity: 0.94;
+  font-family: sans-serif;
+}
+.elementor-section3 .container .row .form-contact .contact-header .contact-header-smallbox p {
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+.elementor-section3 .container .row .form-contact .contact-header .contact-header-smallbox .lineee {
+  margin-top: 10%;
+  border-bottom: 0.5px solid rgb(231, 229, 229);
+}
+.elementor-section3 .container .row .form-contact .form-box {
+  margin-top: 4%;
+}
+.elementor-section3 .container .row .form-contact .form-box .email-name .name p span input {
+  border-style: none;
+  border-radius: 5px;
+  padding: 0.8rem 4rem;
+  background-color: rgb(237, 243, 246);
   font-size: 0.8rem;
 }
-.basket-container .total-pricee .shipping form ul li label .shipment-fee {
-  color: red;
-  font-size: 1rem;
-}
-.basket-container .total-pricee .shipping form ul .none-click p {
-  font-weight: 400;
-}
-.basket-container .total-pricee .shipping form ul .none-click p span {
-  font-weight: 600;
-}
-.basket-container .total-pricee .shipping form .change-address a {
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: rgb(13, 116, 160);
-}
-.basket-container .total-pricee .shipping form .submit {
-  background-color: rgb(182, 40, 40);
-  color: white;
+.elementor-section3 .container .row .form-contact .form-box .email-name .email span input {
+  border-style: none;
   border-radius: 5px;
-  padding: 15px 50px;
-  position: absolute;
-  margin-top: 25%;
-  margin-left: -30%;
+  padding: 0.8rem 4rem;
+  background-color: rgb(237, 243, 246);
+  font-size: 0.8rem;
 }
-.basket-container .total-pricee .total-value {
-  border-bottom: 1px solid rgb(185, 175, 175);
+.elementor-section3 .container .row .form-contact .form-box .subject p span input {
+  border-style: none;
+  border-radius: 5px;
+  padding: 0.8rem 33.6%;
+  background-color: rgb(237, 243, 246);
+  font-size: 0.8rem;
 }
-.basket-container .total-pricee .total-value .total_p {
-  font-weight: 700;
+.elementor-section3 .container .row .form-contact .form-box .message p span textarea {
+  border-style: none;
+  border-radius: 5px;
+  padding: 0.8rem 34.7%;
+  background-color: rgb(237, 243, 246);
+  font-size: 0.8rem;
+}
+.elementor-section3 .container .row .form-contact .form-box .submit p input {
+  padding: 1rem 2rem;
+  border-style: none;
+  border-radius: 5px;
+  font-weight: 600;
+  opacity: 0.88;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  color: white;
+  background-color: rgb(11, 11, 133);
 }/*# sourceMappingURL=index.css.map */
