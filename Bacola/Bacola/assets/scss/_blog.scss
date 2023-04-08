@@ -3,7 +3,7 @@
 .blog-section{
     .container{
         .row{
-            .content-primary{
+            .content-primaryy{
                 .site-posts{
                     .postt{
                         .post-thumbnail{
@@ -75,7 +75,7 @@
                             }
                         }
                     }
-                    
+                  
                     .site-pagination{
                         .page-numbers{
                             list-style: none !important;
@@ -129,6 +129,7 @@
                     }
                 }
                 .widget_popular_posts{
+                    
                     margin-top: 16%;
                     .widget-title{
                         font-size: 1.2rem;
@@ -136,19 +137,24 @@
                         text-transform: uppercase;
                     }
                     .widget-body{
+                        
                         .widget-posts{
                             border: 1px solid rgb(233, 227, 227);
                             border-radius: 10px;
                             .post{
+                                padding: 1rem 1rem;
                                 .post-thumbnail{
+                                    margin-top: 4% !important;
                                     position: relative;
                                     .post-number{
-                                        margin-left: 22%;
+                                        margin-left: 72%;
                                         border: 2px solid white;
                                         position: absolute;
                                         display: flex;
                                         justify-content: center;
                                         align-items: center;
+                                        font-size: 70%;
+                                        padding: 1%;
                                         border-radius: 50%;
                                         background-color: rgb(35, 142, 204);
                                         color: white;
@@ -159,20 +165,25 @@
                                         -moz-box-shadow: -1px 1px 11px 4px rgba(249,236,236,0.84);
                                     }
                                     a{
+                                        
                                         img{
+                                            
                                             border-radius: 50%;
                                         }
                                     }
                                 }
                                 .post-wrapper{
                                     .entry-title{
-                                        line-height: 55% !important;
+                                        font-size: 100%;
+                                        line-height: 100% !important;
                                         a{
                                             
-                                            color: black;
+                                            color: rgb(35, 33, 33);
+                                            
                                             font-size: 1rem !important;
-                                            font-weight: 700;
+                                            font-weight: 600;
                                             text-decoration: none !important;
+                                            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                                         }
                                     }
                                 }
@@ -180,7 +191,123 @@
                         }
                     }
                 }
+                .widget_social_list{
+                    margin-top: 15%;
+                    .widget-title{
+                        font-weight: 900;
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                    }
+                    .widget-body{
+                        margin-top: 6%;
+                        .site-social{
+                            ul{
+                               
+                                list-style: none;
+                                .facebook{
+                                    background-color: rgb(10, 81, 214);
+                                    border-radius: 10px;
+                                    padding: 0.4rem 0;
+                                    margin-top: 1%;
+
+                                }
+                                .twitter{
+                                    background-color: rgb(20, 154, 231);
+                                    border-radius: 10px;
+                                    padding: 0.4rem 0;
+                                    margin-top: 1%;
+                                }
+                                .pinterest{
+                                    background-color: rgb(154, 11, 11);
+                                    border-radius: 10px;
+                                    padding: 0.4rem 0;
+                                    margin-top: 1%;
+                                }
+                                .reddit{
+                                    background-color: rgb(224, 80, 13);
+                                    border-radius: 10px;
+                                    padding: 0.4rem 0;
+                                    margin-top: 1%;
+                                }
+                                .linkedin{
+                                    background-color: rgb(13, 78, 116);
+                                    border-radius: 10px;
+                                    padding: 0.4rem 0;
+                                    margin-top: 1%;
+                                }   
+                                li{ 
+                                    
+                                    a{
+                                        margin-left: 10%;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: start;
+                                        text-decoration: none;
+                                        gap: 2rem;
+                                        i{
+                                            color: white;
+                                        }
+                                        span{
+                                            color: white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .widget_media_image{
+                    margin-top: 15%;
+                    .widget-title{
+                        font-weight: 900;
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                    }
+                    img{
+
+                    }
+                }
+                .widget_tag_cloud{
+                    .widget-title{
+                        font-size: 1.2rem;
+                        font-weight: 800;
+                        text-transform: uppercase;  
+                    }
+                    .tagcloud{
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 2%;
+                        a{
+                            border: 1px solid rgb(241, 233, 233);
+                            text-decoration: none;
+                            background-color: white;
+                            color: black;
+                            font-weight: 500;
+                            font-size: 100%;
+                            padding: 1% 4%;
+                            margin-top: 2%;
+                        }
+                        .tag-link-26{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0 20%;
+                        }
+                    }
+                }
             }
         }
     }
 }
+
+
+.deactive{
+    display: none !important;
+}
+
+@media only screen and (min-width:760px){
+    .link-social{
+        margin-left: -11%;
+    }
+}
+

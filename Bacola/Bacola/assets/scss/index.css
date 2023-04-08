@@ -2199,23 +2199,23 @@ body {
 .container .row .site-login-container .site-login-box .login-form-container .login-form-box .login-form .form-row .password-input .input-text .show-password-input {
   position: absolute;
 }
-.blog-section .container .row .content-primary .site-posts .postt .post-thumbnail {
+.blog-section .container .row .content-primaryy .site-posts .postt .post-thumbnail {
   border-radius: 10px;
 }
-.blog-section .container .row .content-primary .site-posts .postt .post-thumbnail a {
+.blog-section .container .row .content-primaryy .site-posts .postt .post-thumbnail a {
   border-radius: 10px;
 }
-.blog-section .container .row .content-primary .site-posts .postt .post-thumbnail a img {
+.blog-section .container .row .content-primaryy .site-posts .postt .post-thumbnail a img {
   border-radius: 10px;
 }
-.blog-section .container .row .content-primary .site-posts .postt .post-wrapper {
+.blog-section .container .row .content-primaryy .site-posts .postt .post-wrapper {
   margin-top: 3%;
 }
-.blog-section .container .row .content-primary .site-posts .postt .post-wrapper .entry-meta .meta-item i {
+.blog-section .container .row .content-primaryy .site-posts .postt .post-wrapper .entry-meta .meta-item i {
   color: rgb(43, 154, 191);
   font-size: 1.1rem;
 }
-.blog-section .container .row .content-primary .site-posts .postt .post-wrapper .entry-meta .meta-item a {
+.blog-section .container .row .content-primaryy .site-posts .postt .post-wrapper .entry-meta .meta-item a {
   text-decoration: none;
   color: rgb(79, 71, 71);
   font-weight: 900;
@@ -2224,55 +2224,55 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   transition: 1.4s;
 }
-.blog-section .container .row .content-primary .site-posts .postt .post-wrapper .entry-meta .meta-item a:hover {
+.blog-section .container .row .content-primaryy .site-posts .postt .post-wrapper .entry-meta .meta-item a:hover {
   border-bottom: solid grey 1px;
 }
-.blog-section .container .row .content-primary .site-posts .postt .post-wrapper .entry-title {
+.blog-section .container .row .content-primaryy .site-posts .postt .post-wrapper .entry-title {
   margin-top: 2%;
 }
-.blog-section .container .row .content-primary .site-posts .postt .post-wrapper .entry-title a {
+.blog-section .container .row .content-primaryy .site-posts .postt .post-wrapper .entry-title a {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   text-decoration: none;
   font-weight: 900;
   font-size: 2.3rem;
   color: rgb(53, 49, 49);
 }
-.blog-section .container .row .content-primary .site-posts .postt .post-wrapper .entry-content {
+.blog-section .container .row .content-primaryy .site-posts .postt .post-wrapper .entry-content {
   margin-bottom: 7%;
 }
-.blog-section .container .row .content-primary .site-posts .postt .post-wrapper .entry-content .klb-post p {
+.blog-section .container .row .content-primaryy .site-posts .postt .post-wrapper .entry-content .klb-post p {
   color: rgb(44, 40, 40);
   font-size: 1rem;
   font-weight: 600;
 }
-.blog-section .container .row .content-primary .site-posts .postt .post-wrapper .entry-content .klb-post .entry-button {
+.blog-section .container .row .content-primaryy .site-posts .postt .post-wrapper .entry-content .klb-post .entry-button {
   margin-top: 3%;
   background-color: rgb(22, 57, 138);
   border-radius: 5px;
   padding: 1% 0;
 }
-.blog-section .container .row .content-primary .site-posts .postt .post-wrapper .entry-content .klb-post .entry-button a {
+.blog-section .container .row .content-primaryy .site-posts .postt .post-wrapper .entry-content .klb-post .entry-button a {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-weight: 500;
   text-decoration: none;
   color: white;
   opacity: 0.96;
 }
-.blog-section .container .row .content-primary .site-posts .site-pagination .page-numbers {
+.blog-section .container .row .content-primaryy .site-posts .site-pagination .page-numbers {
   list-style: none !important;
 }
-.blog-section .container .row .content-primary .site-posts .site-pagination .page-numbers li {
+.blog-section .container .row .content-primaryy .site-posts .site-pagination .page-numbers li {
   cursor: pointer;
 }
-.blog-section .container .row .content-primary .site-posts .site-pagination .page-numbers li .page-numbers {
+.blog-section .container .row .content-primaryy .site-posts .site-pagination .page-numbers li .page-numbers {
   text-decoration: none;
   color: black;
   font-weight: 800;
 }
-.blog-section .container .row .content-primary .site-posts .site-pagination .page-numbers li .page-numbers i {
+.blog-section .container .row .content-primaryy .site-posts .site-pagination .page-numbers li .page-numbers i {
   font-size: 0.8rem;
 }
-.blog-section .container .row .content-primary .site-posts .site-pagination .page-numbers li .current {
+.blog-section .container .row .content-primaryy .site-posts .site-pagination .page-numbers li .current {
   background-color: rgb(16, 139, 200);
   border-radius: 50%;
   padding: 0.4rem 1.1rem;
@@ -2310,16 +2310,22 @@ body {
   border: 1px solid rgb(233, 227, 227);
   border-radius: 10px;
 }
+.blog-section .container .row .content-secondary .widget_popular_posts .widget-body .widget-posts .post {
+  padding: 1rem 1rem;
+}
 .blog-section .container .row .content-secondary .widget_popular_posts .widget-body .widget-posts .post .post-thumbnail {
+  margin-top: 4% !important;
   position: relative;
 }
 .blog-section .container .row .content-secondary .widget_popular_posts .widget-body .widget-posts .post .post-thumbnail .post-number {
-  margin-left: 22%;
+  margin-left: 72%;
   border: 2px solid white;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 70%;
+  padding: 1%;
   border-radius: 50%;
   background-color: rgb(35, 142, 204);
   color: white;
@@ -2333,11 +2339,115 @@ body {
   border-radius: 50%;
 }
 .blog-section .container .row .content-secondary .widget_popular_posts .widget-body .widget-posts .post .post-wrapper .entry-title {
-  line-height: 55% !important;
+  font-size: 100%;
+  line-height: 100% !important;
 }
 .blog-section .container .row .content-secondary .widget_popular_posts .widget-body .widget-posts .post .post-wrapper .entry-title a {
-  color: black;
+  color: rgb(35, 33, 33);
   font-size: 1rem !important;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.blog-section .container .row .content-secondary .widget_social_list {
+  margin-top: 15%;
+}
+.blog-section .container .row .content-secondary .widget_social_list .widget-title {
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.blog-section .container .row .content-secondary .widget_social_list .widget-body {
+  margin-top: 6%;
+}
+.blog-section .container .row .content-secondary .widget_social_list .widget-body .site-social ul {
+  list-style: none;
+}
+.blog-section .container .row .content-secondary .widget_social_list .widget-body .site-social ul .facebook {
+  background-color: rgb(10, 81, 214);
+  border-radius: 10px;
+  padding: 0.4rem 0;
+  margin-top: 1%;
+}
+.blog-section .container .row .content-secondary .widget_social_list .widget-body .site-social ul .twitter {
+  background-color: rgb(20, 154, 231);
+  border-radius: 10px;
+  padding: 0.4rem 0;
+  margin-top: 1%;
+}
+.blog-section .container .row .content-secondary .widget_social_list .widget-body .site-social ul .pinterest {
+  background-color: rgb(154, 11, 11);
+  border-radius: 10px;
+  padding: 0.4rem 0;
+  margin-top: 1%;
+}
+.blog-section .container .row .content-secondary .widget_social_list .widget-body .site-social ul .reddit {
+  background-color: rgb(224, 80, 13);
+  border-radius: 10px;
+  padding: 0.4rem 0;
+  margin-top: 1%;
+}
+.blog-section .container .row .content-secondary .widget_social_list .widget-body .site-social ul .linkedin {
+  background-color: rgb(13, 78, 116);
+  border-radius: 10px;
+  padding: 0.4rem 0;
+  margin-top: 1%;
+}
+.blog-section .container .row .content-secondary .widget_social_list .widget-body .site-social ul li a {
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-decoration: none;
+  gap: 2rem;
+}
+.blog-section .container .row .content-secondary .widget_social_list .widget-body .site-social ul li a i {
+  color: white;
+}
+.blog-section .container .row .content-secondary .widget_social_list .widget-body .site-social ul li a span {
+  color: white;
+}
+.blog-section .container .row .content-secondary .widget_media_image {
+  margin-top: 15%;
+}
+.blog-section .container .row .content-secondary .widget_media_image .widget-title {
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.blog-section .container .row .content-secondary .widget_tag_cloud .widget-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.blog-section .container .row .content-secondary .widget_tag_cloud .tagcloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+.blog-section .container .row .content-secondary .widget_tag_cloud .tagcloud a {
+  border: 1px solid rgb(241, 233, 233);
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  font-size: 100%;
+  padding: 1% 4%;
+  margin-top: 2%;
+}
+.blog-section .container .row .content-secondary .widget_tag_cloud .tagcloud .tag-link-26 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20%;
+}
+
+.deactive {
+  display: none !important;
+}
+
+@media only screen and (min-width: 760px) {
+  .link-social {
+    margin-left: -11%;
+  }
 }/*# sourceMappingURL=index.css.map */
