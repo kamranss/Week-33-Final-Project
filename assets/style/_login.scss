@@ -1,0 +1,100 @@
+.container{
+    margin-bottom: 5%;
+    .row{
+        .site-login-container{
+            .site-login-box{
+               
+                    border: 0.5px solid rgb(238, 236, 236);
+                    border-radius: 5px;
+                .login-page-tab{
+                    margin-top: 10%;
+                    list-style: none;
+                    li{
+                        .active{
+                            text-decoration: none;
+                            color: black;
+                            font-family: sans-serif;
+                            font-weight: 600;
+                        }
+                        .register{
+                            text-decoration: none;
+                            color: black;
+                            font-family: sans-serif;
+                            font-weight: 600;
+                            opacity: 0.6;
+                        }
+                    }
+                }
+                .login-form-container{
+                    padding: 3% 5%;
+                    
+                    .login-form-box{
+                        .login-form{
+                            padding: 3% 5%;
+                            .form-row{
+                                label{
+                                    font-size: 1rem;
+                                    
+                                    span{
+                                        font-size: 1rem;
+                                        font-weight: 500;
+                                    }
+                                }
+                                .input-text{
+                                    border-style: none;
+                                    border-radius: 5px;
+                                    padding: 3% 31%;   
+                                    background-color: rgb(237, 243, 246);
+                                    font-size: 0.8rem;
+                                }
+                                .password-input{
+                                    .input-text{
+                                        position: relative;
+                                        border-style: none;
+                                        border-radius: 5px;
+                                        padding: 3% 31%;                                        background-color: rgb(237, 243, 246);
+                                        font-size: 0.8rem;
+                                        .show-password-input{
+                                            position: absolute;
+                                        }
+                                    }
+                                }
+                                .login-rememberme{
+                                    .input-checkbox{
+
+                                    }
+                                    span{
+
+                                    }
+                                }
+                                #login-nonce{
+
+                                }
+                                .hiddenn{
+
+                                }
+                                .form-login-submit{
+                                    padding: 2% 43%;
+                                    border-style: none;
+                                    border-radius: 5px;
+                                    background-color: rgb(16, 58, 114);
+                                    color: white;
+                                }
+                            }
+                            .lost-password{
+                                a{
+                                    text-decoration: none;
+                                    color: rgb(56, 186, 234);
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                    }
+                    .register-form{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./Bacola/Bacola/assets/scss/index.css">
+        <link rel="stylesheet" href="./assets/style/index.css">
     <title>Document</title>
 </head>
 
@@ -19,7 +19,7 @@
     <footer class="site-footer">
         
         <div class="container">
-            <div class="row">
+            <div class="row footer-row">
                 <div class="footer-first d-flex align-items-center justify-content-around">
                     <div class="left-content col-lg-6 col-md-5 col-sm-">
                         <h6 class="entry-subtitle">$20 discount for your first order</h6>
@@ -57,16 +57,16 @@
                 </div>
                 <div class="footer-icons d-flex align-items-center justify-content-around">
                     <div class="col col-12 col-md-6 col-lg-3">
-                        <div class="iconbox">
-                            <div class="iconbox-icon"><i class="klbth-icon-milk-box"></i></div>
+                        <div class="iconbox d-flex justify-content-center align-items-center gap-2">
+                            <div class="iconbox-icon"><i class="fa-solid fa-martini-glass"></i></div>
                             <div class="iconbox-detail">
                                 <span>Everyday fresh products</span>
                             </div>
                         </div>
                     </div>
                     <div class="col col-12 col-md-6 col-lg-3">
-                        <div class="iconbox">
-                            <div class="iconbox-icon"><i class="klbth-icon-delivery-truck-2"></i></div>
+                        <div class="iconbox d-flex justify-content-center align-items-center gap-2">
+                            <div class="iconbox-icon"><i class="fa-solid fa-truck"></i></i></div>
                             <div class="iconbox-detail">
                                 <span>Free delivery for order over $70
                                 </span>
@@ -74,22 +74,23 @@
                         </div>
                     </div>
                     <div class="col col-12 col-md-6 col-lg-3">
-                        <div class="iconbox">
-                            <div class="iconbox-icon"><i class="klbth-icon-discount-outline"></i></div>
+                        <div class="iconbox d-flex justify-content-center align-items-center gap-2">
+                            <div class="iconbox-icon"><i class="fa-solid fa-tag"></i></i></div>
                             <div class="iconbox-detail">
                                 <span>Daily Mega Discounts</span>
                             </div>
                         </div>
                     </div>
                     <div class="col col-12 col-md-6 col-lg-3">
-                        <div class="iconbox">
-                            <div class="iconbox-icon"><i class="klbth-icon-dollar"></i></div>
+                        <div class="iconbox d-flex justify-content-center align-items-center gap-2">
+                            <div class="iconbox-icon"><i class="fa-solid fa-comment-dollar"></i></div>
                             <div class="iconbox-detail">
                                 <span>Best price on the market</span>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="border"></div>
                 <div class="footer-widgets d-flex align-items-center justify-content-between mt-5">
                     <div class="widget widget-balance-1 col-lg-2 col-md-6 col-sm-7">
                         <div class="klbfooterwidget widget widget_nav_menu">
@@ -340,22 +341,23 @@
                 </div>
                 <div class="footer-contancts d-flex align-items-center justify-content-between">
                     <div class="column column-left">
-                        <div class="site-phone">
-                            <div class="phone-icon"><i class="klbth-icon-phone-call"></i></div>
+                        <div class="site-phone d-flex align-items-center justify-content-center gap-3">
+                            <div class="phone-icon"><i class="fa-solid fa-phone-volume"></i></div>
                             <div class="phone-detail">
                                 <h4 class="entry-title">8 800 555-55</h4>
                                 <span>Working 8:00 - 22:00</span>
                             </div>
                         </div>
                     </div>
-            
-                    <div class="column column-right d-flex align-items-center justify-content-between">
+                    
+
+                    <div class="column column-right d-flex align-items-center justify-content-center">
                         <div class="site-mobile-app d-flex align-items-center justify-content-between">
                             <div class="app-content">
                                 <h6 class="entry-title">Download App on Mobile :</h6>
                                 <span>15% discount on your first purchase</span>
                             </div>
-                            <div class="app-buttons">
+                            <div class="app-buttons d-flex align-items-center justify-content-center">
                                 <a href="https://play.google.com/store" class="google-play">
                                     <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/google-play.png"
                                         alt="app">
@@ -368,7 +370,7 @@
                         </div>
             
                         <div class="site-social d-flex align-items-center justify-content-between">
-                            <ul class="d-flex align-items-center justify-content-between">
+                            <ul class="site-social-box d-flex align-items-center justify-content-between">
                                 <li>
                                     <a href="https://www.facebook.com/" target="_blank">
                                         <i class="fa-brands fa-facebook"></i>
@@ -388,23 +390,27 @@
                         </div>
                     </div>
                 </div>
+                <div class="border"></div>
                 <div class="footer-bottom d-flex align-items-center justify-content-between">
                     <div class="site-copyright">
                         <p>Copyright 2022 © Bacola WordPress Theme. All rights reserved. Powered by KlbTheme.</p>
                     </div>
             
                     <nav class="site-menu footer-menu">
-                        <ul id="menu-footer-menu" class="menu">
-                            <li id="menu-item-1889"
+                        <ul id="menu-footer-menu" class="menu d-flex justify-content-around align-items-center">
+                            <li id="menu-item-1"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-1889">
                                 <a rel="privacy-policy" href="https://klbtheme.com/bacola/privacy-policy/">Privacy
-                                    Policy</a></li>
-                            <li id="menu-item-2066"
+                                    Policy</a>
+                            </li>
+                            <li id="menu-item-2"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2066"><a
-                                    href="https://klbtheme.com/bacola/terms-and-conditions/">Terms and Conditions</a></li>
-                            <li id="menu-item-1844"
+                                    href="https://klbtheme.com/bacola/terms-and-conditions/">Terms and Conditions</a>
+                            </li>
+                            <li id="menu-item-3"
                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1844"><a
-                                    href="#">Cookie</a></li>
+                                    href="#">Cookie</a>
+                            </li>
                         </ul>
                     </nav>
                     <div class="site-payments"><a href="#"><img
