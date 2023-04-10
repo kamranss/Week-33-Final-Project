@@ -1,7 +1,8 @@
 
 
 
-// Set the starting time
+setTimeout(()=>{
+  // Set the starting time
 var startTime = "38 : 13 : 18 : 00".split(" : ");
 var days = parseInt(startTime[0]);
 var hours = parseInt(startTime[1]);
@@ -54,4 +55,5 @@ var x = setInterval(function() {
 
 
 // Nav 
+},4000)
 
