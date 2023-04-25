@@ -1,0 +1,76 @@
+/*Modal code for header-middle (START)*/
+.header-modal .modal-body ul {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+
+}
+
+.header-modal .modal-body ul li {
+  border-bottom: 1px solid #eeeeee;
+  padding: 1rem 0;
+}
+
+.header-modal .modal-body {
+  height: 25rem;
+  overflow: auto;
+}
+
+.header-modal .modal-header {
+  position: relative;
+}
+
+.header-modal .modal-header .btn-close {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+ 
+}
+
+.header-modal .modal-body ul li >:nth-child(2) {
+padding: 0.1rem 0.5rem;
+border-radius: 50rem;
+border:1px solid #eeeeee;
+}
+
+.header-modal .form-inline {
+  position: relative;
+}
+
+.header-modal .form-inline .form-control {
+  padding-left: 2rem;
+}
+
+.header-middle .modal-invoke-btn button,
+.sidebar-main .modal-invoke-btn button {
+  text-align: left;
+  position: relative;
+  border: 1px solid #decfcf;
+  border-radius: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
+}
+
+.header-middle .modal-invoke-btn button span:nth-child(1),
+.sidebar-main .modal-invoke-btn button span:nth-child(1) {
+  font-size: 0.7rem;
+  color: gray;
+}
+
+.modal-invoke-btn button span:nth-child(3) {
+  color: #233a95;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.modal-invoke-btn i {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+}
+    /*Modal code for header-middle (END)*/
+/*Styling of header-middle (END) */

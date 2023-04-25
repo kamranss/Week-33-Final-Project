@@ -57,3 +57,20 @@ var x = setInterval(function() {
 // Nav 
 },4000)
 
+
+
+
+
+// Main drop-down in header-bottom clicked event (START)
+const dropdownToggle = document.querySelector('.myDropdown-toggle');
+const dropdownMenu = document.querySelector('.main-dropdown .dropdown-options');
+
+dropdownToggle.addEventListener('click', function () {
+  if (dropdownMenu.classList.contains('activated')) {
+    dropdownMenu.classList.remove('activated');
+  } else {
+    dropdownMenu.classList.add('activated');
+  }
+});
+// Main drop-down in header-bottom clicked event (END)
+

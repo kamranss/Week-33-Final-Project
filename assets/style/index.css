@@ -444,37 +444,37 @@ body {
 .header .container .row .bottom-header-nav .categories {
   margin-left: 4%;
 }
-.header .container .row .bottom-header-nav .categories a {
-  display: flex;
-  flex-direction: column;
+.header .container .row .bottom-header-nav .categories .main-dropdown2 {
+  width: 80%;
   background-color: #2bbef9;
   font-size: 0.9375rem;
   padding: 0 1.25rem;
+  color: black;
   border-radius: 3.125rem;
   transition: all 0.15s cubic-bezier(0.28, 0.12, 0.22, 1);
   position: relative;
   text-decoration: none;
 }
-.header .container .row .bottom-header-nav .categories a .all-categories {
+.header .container .row .bottom-header-nav .categories .main-dropdown2 .all-categories {
   height: 50px;
   width: 100%;
   display: flex;
   color: #ffffff;
   align-items: center;
 }
-.header .container .row .bottom-header-nav .categories a .all-categories .fa-bars {
+.header .container .row .bottom-header-nav .categories .main-dropdown2 .all-categories .fa-bars {
   font-size: 14px;
 }
-.header .container .row .bottom-header-nav .categories a .all-categories .category-title {
+.header .container .row .bottom-header-nav .categories .main-dropdown2 .all-categories .category-title {
   margin-left: 15px;
   font-size: 0.9375rem;
   font-family: "Dosis", sans-serif;
 }
-.header .container .row .bottom-header-nav .categories a .all-categories .fa-chevron-down {
+.header .container .row .bottom-header-nav .categories .main-dropdown2 .all-categories .fa-chevron-down {
   font-size: 12px;
   margin-left: 30px;
 }
-.header .container .row .bottom-header-nav .categories a .category-products {
+.header .container .row .bottom-header-nav .categories .main-dropdown2 .category-products {
   position: absolute;
   font-family: "Dosis", sans-serif;
   height: 1.125rem;

@@ -24,6 +24,8 @@
 
     <!-- <link rel="stylesheet" href="./assets/Test/category4Slider.css"> -->
     <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/modal.css">
+    <link rel="stylesheet" href="./style/headerButtomDropDown.css">
     <!-- <link rel="stylesheet" href="./style/home.css"> -->
 
     
@@ -113,14 +115,105 @@
                           <span class="brand-description">Online Grocery Shopping Center</span>
                         </a>
                   </div>
+                  <div>
+                    
+                  </div>
                   <div class="location-search col-lg-5 col-md-5 col-sm-5 d-flex justify-content-between align-item-center">
-                    <div class="location col-lg-4 col-md-4 col-sm-4">
-                      <a href="#">
-                        <span class="your-location">Your Location</span>
-                        <p class="select-location">Select a Location</p>
-                        <i class="fa-solid fa-chevron-down"></i>
-                      </a>
-                    </div>
+                    
+                        <div class=" header-modal col-lg-4 col-md-4 col-sm-4" >
+                            
+                            <!-- should be fixed some minor view problems  -->
+                            <div class="modal-invoke-btn">
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="location col-lg-12">
+                                        <a href="#">
+                                          <span class="your-location">Your Location</span>
+                                          <p class="select-location">Select a Location</p>
+                                          <i class="fa-solid fa-chevron-down"></i>
+                                        </a>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header flex-column">
+                                        <h5 class="modal-title" id="exampleModalLabel">Choose your delivery location
+                                        </h5>
+                                        <div>
+                                            <p>Enter your address and we will specify the offer for your area.</p>
+                                        </div>
+                                        <div>
+                                            <nav class="navbar navbar-light bg-none">
+                                                <form class="form-inline">
+                                                    <input style="height: 50px; width: 400px; background-color:#F3F4F7;"
+                                                        class="form-control mr-sm-2" type="search"
+                                                        placeholder="Search for products..." aria-label="Search">
+                                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                                </form>
+                                            </nav>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li class="d-flex justify-content-between">
+                                                <span>Select a location</span>
+                                                <span>Clear all</span>
+                                            </li>
+                                            <li class="d-flex justify-content-between">
+                                                <span>Alabama</span>
+                                                <span>Min: $130</span>
+                                            </li>
+                                            <li class="d-flex justify-content-between">
+                                                <span>Alaska</span>
+                                                <span>Min: $120 </span>
+                                            </li>
+                                            <li class="d-flex justify-content-between">
+                                                <span>Arizona</span>
+                                                <span>Min: $150</span>
+                                            </li>
+                                            <li class="d-flex justify-content-between">
+                                                <span>California</span>
+                                                <span>Min: $110</span>
+                                            </li>
+                                            <li class="d-flex justify-content-between">
+                                                <span>Colorado</span>
+                                                <span>Min: $140</span>
+                                            </li>
+                                            <li class="d-flex justify-content-between">
+                                                <span>Florida</span>
+                                                <span>Min: $160</span>
+                                            </li>
+                                            <li class="d-flex justify-content-between">
+                                                <span>Georgia</span>
+                                                <span>Min: $120</span>
+                                            </li>
+                                            <li class="d-flex justify-content-between">
+                                                <span>Kansas</span>
+                                                <span>Min: $170</span>
+                                            </li>
+                                            <li class="d-flex justify-content-between">
+                                                <span>Minnesota</span>
+                                                <span>Min: $120</span>
+                                            </li>
+                                            <li class="d-flex justify-content-between">
+                                                <span>New York</span>
+                                                <span>Min: $110</span>
+                                            </li>
+                                            <li class="d-flex justify-content-between">
+                                                <span>Washington</span>
+                                                <span>Min: $130</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
                     <div class="search col-lg-5  col-md-12 col-sm-12">
                       <form class="search-form" action="./index.html">
                         <input class="input" type="text" placeholder="Search for products..." required>
@@ -163,17 +256,82 @@
                     </div>
                   </div>
                 </div>
-                <div class="bottom-header-nav col-lg-12 col-md-12 col-sm-12 d-flex align-items-center justify-content-between">
-                  <div class="categories d-flex align-item-center justify-content-between col-lg-3 col-md-3 col-sm-3">
-                    <a href="" class="">
-                      <div class="all-categories d align-item-center justify-content-between col-lg-12">
-                        <i class="fa-solid fa-bars"></i>
-                        <h2 class="category-title">ALL CATEGORIES</h2>
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <div class="category-products">TOTAL <span>63</span> PRODUCTS</div>
-                      </div>
-                    </a>
-                  </div>
+                <div class="bottom-header-nav  col-lg-12 col-md-12 col-sm-12 d-flex align-items-center justify-content-between">
+                    <div class="categories header-bottom d-flex align-item-center justify-content-between col-lg-3 col-md-3 col-sm-3 ">
+                        <div class="main-dropdown main-dropdown2 col-lg-3 col-md-3 col-sm-3">
+                            <button class="btn myDropdown-toggle" type="button">
+                                <div class="all-categories d align-item-center justify-content-between col-lg-12">
+                                    <i class="fa-solid fa-bars"></i>
+                                    <h2 class="category-title">ALL CATEGORIES</h2>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                    <div class="category-products">TOTAL <span>63</span> PRODUCTS</div>
+                                </div>
+                            </button>
+                            <ul class="dropdown-options mt-4">
+                                <li class="expandable">
+                                    <i class="fa-solid fa-apple-whole me-2"></i>
+                                    <a class="no-style pointer" href="#">Fruits & Vegetables</a>
+                                    <i class="fa-solid fa-chevron-right right-icon"></i>
+                                    <ul class="dropdown-options-inner">
+                                        <li><a class="no-style pointer" href="#">Cuts & Sprouts</a></li>
+                                        <li><a class="no-style pointer" href="#">Exotic Fruits & Veggies</a></li>
+                                        <li><a class="no-style pointer" href="#">Fresh Fruits</a></li>
+                                        <li><a class="no-style pointer" href="#">Fresh Vegetables</a></li>
+                                        <li><a class="no-style pointer" href="#">Herbs & Seasonings</a></li>
+                                        <li><a class="no-style pointer" href="#">Packaged Produce</a></li>
+                                        <li><a class="no-style pointer" href="#">Party Trays</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-drumstick-bite me-2"></i>
+                                    <a class="no-style pointer" href="#">Meats & Seafood</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-egg me-2"></i>
+                                    <a class="no-style pointer" href="#">Breakfast & Dairy</a>
+                                </li>
+                                <li class="expandable">
+                                    <i class="fa-solid fa-mug-hot me-2"></i>
+                                    <a class="no-style pointer" href="#">Beverages</a>
+                                    <i class="fa-solid fa-chevron-right right-icon"></i>
+                                    <ul class="dropdown-options-inner">
+                                        <li><a class="no-style pointer" href="#">Coffee</a></li>
+                                        <li><a class="no-style pointer" href="#">Craft Beer</a></li>
+                                        <li><a class="no-style pointer" href="#">Drink Boxes & Pouches</a></li>
+                                        <li><a class="no-style pointer" href="#">Milk & Plant-Based Milk</a></li>
+                                        <li><a class="no-style pointer" href="#">Soda & Pop</a></li>
+                                        <li><a class="no-style pointer" href="#">Sparkling Water</a></li>
+                                        <li><a class="no-style pointer" href="#">Tea & Kombucha</a></li>
+                                        <li><a class="no-style pointer" href="#">Water</a></li>
+                                        <li><a class="no-style pointer" href="#">Wine</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bread-slice me-2"></i>
+                                    <a class="no-style pointer" href="#">Breads & Bakery</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-icicles me-2"></i>
+                                    <a class="no-style pointer" href="#">Frozen Foods</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cookie me-2"></i>
+                                    <a class="no-style pointer" href="#">Biscuits & Snacks</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-leaf me-2"></i>
+                                    <a class="no-style pointer" href="#">Grocery & Staples</a>
+                                </li>
+                                <hr>
+                                <ul>
+                                    <li><a class="no-style pointer" href="#">Value of the Day</a></li>
+                                    <li><a class="no-style pointer" href="#">Top 100 Offers</a></li>
+                                    <li><a class="no-style pointer" href="#">New Arrivals</a></li>
+                                </ul>
+                            </ul>
+                        </div>
+
+                    </div>
                   <div class="bottom-nav-bar col-lg-7 col-md-7 col-sm-7">
                     <ul class="bottom-nav-list d-flex align-item-center justify-content-between">
                       <li class="bottom-nav-list-item active-page"><a href="./Home.html">HOME<i class="fa-solid fa-chevron-down"></i></a>

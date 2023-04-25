@@ -507,12 +507,14 @@
         border-bottom: 1px solid #e3e4e6;
         .categories {
           margin-left: 4%;
-          a {
-            display: flex;
-            flex-direction: column;
+          .main-dropdown2{
+            width: 80%;
+            // display: flex;
+            // flex-direction: column;
             background-color: #2bbef9;
             font-size: .9375rem;
             padding: 0 1.25rem;
+            color: black;
             border-radius: 3.125rem;
             transition: all 0.15s cubic-bezier(.28,.12,.22,1);
             position: relative;
